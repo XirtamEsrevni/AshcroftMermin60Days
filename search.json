@@ -1,0 +1,133 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ashcroft & Mermin in 60 Days",
+    "section": "",
+    "text": "A tweet inspired journey to digest all of the iconic Ashcroft & Mermin in 60 days. The goal is to read about 13 pages everyday, take notes1, and discuss. Lets go!\n1 These will be more of dictations rather than rephrasings. The intent is to capture the most important content.\n\n\nSeems like people like the book club idea! The first book will be solid state physics (ashcroft/mermin), I'll set up a space for next thursday to talk about chs. 1-4 (p. 1-84 in my edition). Like or DM if you want to join, I'll create a groupchat. https://t.co/QNrgHAsb6O\n\n— Max Aifer (@MaxAifer) June 7, 2024\n\n\n\nMax Aifer is also providing his Notion notes.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp14-26.html",
+    "href": "notes/chapter1/pp14-26.html",
+    "title": "Drude Theory (pp. 14-26)",
+    "section": "",
+    "text": "When a time varying electric field is present, \\(\\mathbf{E}(t) = Re\\left(\\mathbf{E}(\\omega)e^{-i\\omega t}\\right)\\), the frequency dependent electrical conductivity is:\n\\[ \\sigma(\\omega) = \\frac{\\sigma_o}{1-i\\omega t}\\]\nwith \\(\\sigma_o\\) being the DC Drude conductivity. If we look to solutions for to Maxwell’s equations given a specified current density \\(\\mathbf{j}\\), the resulting wave equation has dielectric constant of the form:\n\\[\\mathbf{\\epsilon}(\\omega) = 1 + \\frac{4\\pi i \\sigma}{\\omega}\\].\nAssuming \\(\\omega \\tau \\gg 1\\) and thus \\(1-i\\omega\\tau \\approx -i\\omega \\tau\\), then:\n\\[\\mathbf{\\epsilon}(\\omega) = 1 - \\frac{3\\pi n e^2}{m \\omega^2} = 1 - \\frac{\\omega_p^2}{\\omega^2} \\tag{1}\\]\nwhere \\(\\omega_p^2\\) is called the plasma frequency and dictates wheter EM radiation can propagate through the electron gas. Another outcome from Equation 1, is charge density oscillations that have oscillatory time depencence \\(e^{-i\\omega t}\\).",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 14-26)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp14-26.html#ac-electrical-conductivity",
+    "href": "notes/chapter1/pp14-26.html#ac-electrical-conductivity",
+    "title": "Drude Theory (pp. 14-26)",
+    "section": "",
+    "text": "When a time varying electric field is present, \\(\\mathbf{E}(t) = Re\\left(\\mathbf{E}(\\omega)e^{-i\\omega t}\\right)\\), the frequency dependent electrical conductivity is:\n\\[ \\sigma(\\omega) = \\frac{\\sigma_o}{1-i\\omega t}\\]\nwith \\(\\sigma_o\\) being the DC Drude conductivity. If we look to solutions for to Maxwell’s equations given a specified current density \\(\\mathbf{j}\\), the resulting wave equation has dielectric constant of the form:\n\\[\\mathbf{\\epsilon}(\\omega) = 1 + \\frac{4\\pi i \\sigma}{\\omega}\\].\nAssuming \\(\\omega \\tau \\gg 1\\) and thus \\(1-i\\omega\\tau \\approx -i\\omega \\tau\\), then:\n\\[\\mathbf{\\epsilon}(\\omega) = 1 - \\frac{3\\pi n e^2}{m \\omega^2} = 1 - \\frac{\\omega_p^2}{\\omega^2} \\tag{1}\\]\nwhere \\(\\omega_p^2\\) is called the plasma frequency and dictates wheter EM radiation can propagate through the electron gas. Another outcome from Equation 1, is charge density oscillations that have oscillatory time depencence \\(e^{-i\\omega t}\\).",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 14-26)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp14-26.html#thermal-conductivity-of-a-metal",
+    "href": "notes/chapter1/pp14-26.html#thermal-conductivity-of-a-metal",
+    "title": "Drude Theory (pp. 14-26)",
+    "section": "Thermal Conductivity of a Metal",
+    "text": "Thermal Conductivity of a Metal\nA one-dimensonal thermal current will be given by \\(j^q = -\\kappa \\frac{dT}{dx}\\). Simplifying this to view the thermal energy per electron before and after a collision, would be \\(\\mathcal{E}(T[x\\prime])\\) and \\(\\mathcal{E}(T[x])\\), respectively. Consider that two thermal resivoirs, a hot and cold, then we can write:\n\\[ j^q = \\frac{1}{2} n\\, v\\left( \\mathcal{E}(T[x-v\\tau]) - \\mathcal{E}(T[x+v\\tau])\\right) \\]\nthe first term in parenthesis is the hot and the second the cold. The prefactor is the number of electrons and their velocity. Expanding about the point \\(x\\) gives:\n\\[j^q = nv^2\\tau \\frac{d\\mathcal{E}}{dT}\\left(-\\frac{dT}{dx}\\right)\\]\nIn 3D, assumping isotropic velocity distribution, \\(\\langle \\mathbf{v} \\rangle = \\frac{1}{3}v^2\\), and from thermodynamics \\(n\\frac{\\mathcal{E}}{dT}=C_v\\). Then the thermal current is given as:\n\\[\\mathbf{j}^q = -\\frac{1}{3}v^2\\tau C_v \\nabla T\\]\nand defining thermal conductivity as:\n\\[ \\frac{1}{3} v^2 \\tau C_v \\]\nOne of the success of this analysis is the Wiedemann-Franz law, which assumes both the electronic specific heat, \\(C_v\\), and the electronic velocity \\(v\\) are described through classical ideal gas laws and thus leads to:\n\\[\\frac{\\kappa}{\\sigma} = \\frac{3}{2} \\left(\\frac{k_B}{e}\\right)^2 T\\,,\\]\nWhich surprisingly agreed with experiments, because the electronic contributions to specific heat is no where near \\(\\frac{3}{2} n k_B\\). It turned out that the agreement was pure luck in canceling of two errors in the Drude theory approximation that cancel each other out.",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 14-26)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp14-26.html#thermopower",
+    "href": "notes/chapter1/pp14-26.html#thermopower",
+    "title": "Drude Theory (pp. 14-26)",
+    "section": "Thermopower",
+    "text": "Thermopower\nSimilar to thermal conductivity, using the Drude theory to analyze thermopower in thermoelectrics, it is found to be constant:\n\\[ Q = -\\frac{k_B}{2e} \\]",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 14-26)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter2/pp30-43.html",
+    "href": "notes/chapter2/pp30-43.html",
+    "title": "Sommerfeld Theory (pp. 30-33)",
+    "section": "",
+    "text": "ReuseCC BY 4.0",
+    "crumbs": [
+      "Chapter 2",
+      "Sommerfeld Theory (pp. 30-33)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp1-13.html",
+    "href": "notes/chapter1/pp1-13.html",
+    "title": "Drude Theory (pp. 1-13)",
+    "section": "",
+    "text": "The Drude theory is a basic model treating the conductive electrons under kinetic theory. The ion core, \\(eZ_a\\) and core electrons, \\(e\\left(Z_a-Z\\right)\\), are treated as stationary. Only interactions between conduction electrons and the core electrons and ion are considered.\nGive such treatment, the electron density in number of electrons per \\(\\text{cm}^3\\) is written as:\n\\[n = 6.022 \\times 10^{23} \\frac{Z_c\\rho_m}{A}\\]\nwith \\(Z_c\\) the number of conduction electrons contributed by an atom and \\(\\rho_m\\) and \\(A\\) are the mass density and atomic mass, respectively.\nA effective electron radius can be defined by considering a conduction volume of a sphere, \\(r_s = (\\frac{3}{4\\pi n})^{1/3}\\).\nThe Drude model assumes only interactions between effective ion cores and independent electrons. We write a collision frequency for electron-ion as \\(\\frac{1}{\\tau}\\).",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 1-13)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp1-13.html#basic-approximations",
+    "href": "notes/chapter1/pp1-13.html#basic-approximations",
+    "title": "Drude Theory (pp. 1-13)",
+    "section": "",
+    "text": "The Drude theory is a basic model treating the conductive electrons under kinetic theory. The ion core, \\(eZ_a\\) and core electrons, \\(e\\left(Z_a-Z\\right)\\), are treated as stationary. Only interactions between conduction electrons and the core electrons and ion are considered.\nGive such treatment, the electron density in number of electrons per \\(\\text{cm}^3\\) is written as:\n\\[n = 6.022 \\times 10^{23} \\frac{Z_c\\rho_m}{A}\\]\nwith \\(Z_c\\) the number of conduction electrons contributed by an atom and \\(\\rho_m\\) and \\(A\\) are the mass density and atomic mass, respectively.\nA effective electron radius can be defined by considering a conduction volume of a sphere, \\(r_s = (\\frac{3}{4\\pi n})^{1/3}\\).\nThe Drude model assumes only interactions between effective ion cores and independent electrons. We write a collision frequency for electron-ion as \\(\\frac{1}{\\tau}\\).",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 1-13)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp1-13.html#dc-electrical-conductivity",
+    "href": "notes/chapter1/pp1-13.html#dc-electrical-conductivity",
+    "title": "Drude Theory (pp. 1-13)",
+    "section": "DC Electrical Conductivity",
+    "text": "DC Electrical Conductivity\nThe resistance, \\(R\\), is a dimension dependent quantity and can be removed by considering the resistivity, \\(rho\\), a takes meaning when defining the electric field at a point due to a current density.:\n\\[\\mathbf{E} = \\rho \\mathbf{j}\\]\nIn the Drude model \\(\\mathbf{j}\\) can be expressed in terms of charge density and average velocity, \\(\\mathbf{v}\\)\n\\[\\mathbf{j} = -e\\,n\\mathbf{v}\\].\nThe average velocity of an electron in the presence of a field can be approximated as \\(\\mathbf{v} = \\frac{e\\mathbf{E}\\tau}{m_e}\\), \\(m_e\\) being the mass of an electron.\nPutting it together in terms of currenty density \\(j\\):\n\\[\\mathbf{j} = \\sigma \\mathbf{E} = \\frac{ne^2 \\tau}{m_e} \\mathbf{E}\\]\nwith \\(\\sigma\\) being the conductivity. Measuring \\(\\sigma\\) (or \\(\\rho\\)) enables determining \\(\\tau\\) which ranges from 1-10 femtoseconds. The mean free path then being \\(\\lambda=v_o \\tau\\).\nIf assuming equipartion of energy for a free gas, then \\(v_o = \\frac{3}{2}k_b T\\) and \\(\\lambda\\) is between 1-10 Angstroms.\nThe electron current density can be written in terms of momentum and the effect of an external field and collisions, \\(\\frac{dt}{\\tau}\\), can be included. Without collisions, \\((1-\\frac{dt}{\\tau})\\), the momentum, \\(p(t+dt)\\) is given as:\n\\[ \\mathbf{p}(t+dt)= \\mathbf{p}(t) - \\left(\\frac{dt}{\\tau}\\right)\\mathbf{p}(t) + \\mathbf{f}(t) dt + \\mathcal{O}(dt)^2 \\]\nThe collision term, \\(\\frac{dt}{\\tau}\\), only affects terms of \\(\\mathcal{O}(dt)^2\\). Then, rearranging, dividing by \\(dt\\), and taking limit as \\(dt \\rightarrow 0\\), gives:\n\\[\n\\frac{d\\mathbf{p}(t)}{dt} = -\\frac{\\mathbf{p}(t)}{\\tau} + \\mathbf{f}(t)\n\\tag{1}\\]\nThis states that individual collisions of electrons introduce a frictiaonal damping1\n1 Max mentioned in our twitter dicussion that this looks very similar to fluctuation-dissipation theorems in thermodynamics.",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 1-13)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter1/pp1-13.html#hall-effect-magnetoresistance",
+    "href": "notes/chapter1/pp1-13.html#hall-effect-magnetoresistance",
+    "title": "Drude Theory (pp. 1-13)",
+    "section": "Hall Effect, Magnetoresistance",
+    "text": "Hall Effect, Magnetoresistance\nThe Drude theory can be used to solve the following setup:\n\n\n\nHall experiment\n\n\nA magnetoresistance is experienced due to the force felt on the current,\\(j_x\\), along a substrate. A Hall coefficient can be defined as \\(R_H = \\frac{E_y}{j_x H}\\).\nIf we find steady-state solutions for \\(j_x\\) using the Equation 1, one gets:\n\\[\n\\begin{align}\n\\sigma_o E_x  &= \\omega_c \\tau j_y + j_x \\\\\n\\sigma_o E_y &= -\\omega_c \\tau j_x + j_y \\\\\n\\end{align}\n\\],\nbut there is no transverse current \\(j_y\\) when the Hall field \\(E_y\\) is present. Therefore, the hall resistance is given by:\n\\[ R_H = -\\frac{1}{nec} \\]",
+    "crumbs": [
+      "Chapter 1",
+      "Drude Theory (pp. 1-13)"
+    ]
+  },
+  {
+    "objectID": "notes/x_discussions/13Jun2024.html",
+    "href": "notes/x_discussions/13Jun2024.html",
+    "title": "Ch. 1-4",
+    "section": "",
+    "text": "Caution\n\n\n\nThe transcript text was generated via OpenAI Whisper and then passed to OpenAI GPT4o for summary. The following prompt was used:\nPlease summarize the attached transcript. Pay close attention to topics discussed; do not include things that are not in the transcript. Break each topic up into summaries in bullet point fashion. Be detailed when necessary. Make corrections to miss spellings in transcription text about solid state physics. Make it easy for the reader to quickly skim and understand. Produce the output in raw markdown code.",
+    "crumbs": [
+      "X Spaces Discussions",
+      "Ch. 1-4"
+    ]
+  },
+  {
+    "objectID": "notes/x_discussions/13Jun2024.html#transcript-summary",
+    "href": "notes/x_discussions/13Jun2024.html#transcript-summary",
+    "title": "Ch. 1-4",
+    "section": "Transcript Summary",
+    "text": "Transcript Summary\n\nGeneral Reading Experience\n\nParticipants found the material dense and challenging.\nSome participants were familiar with the core concepts, but not all technical details.\n\n\n\nChapter 1: Drude Model\n\nIntroduction to the Drude Model\n\nThe model applies the kinetic theory of gases to electrons in metals.\nInitial simplicity evolves into more sophisticated models as constraints are added.\n\nAssumptions of the Drude Model\n\nBasic assumptions about electron collisions, probability, and velocity.\nSimplified by ignoring electron-electron interactions.\n\nDC Electrical Conductivity\n\nOhm’s law derived from the Drude model.\nElectrical conductivity depends on the number density of electrons (n) and the average collision time (tau).\n\nHall Effect\n\nUsed to differentiate between positive and negative charge carriers.\nHall coefficient (R_H) indicates the type of charge carrier and its density.\n\nAC Conductivity\n\nMetals become transparent above a certain frequency (plasma frequency).\nConductivity decreases with increasing frequency due to fewer electron collisions.\n\nThermal Conductivity\n\nRelation between thermal and electrical conductivity (Wiedemann-Franz law).\nThermal conductivity also influenced by electron collisions.\n\nThermoelectric Effect\n\nPrediction that certain parameters are constants, unaffected by electron density.\n\n\n\n\nChapter 2: Sommerfeld Model\n\nIntroduction to the Sommerfeld Model\n\nModifies the Drude model by incorporating quantum mechanics.\nElectrons follow Fermi-Dirac statistics instead of Maxwell-Boltzmann.\n\nFermi-Dirac Distribution\n\nDescribes the probability of electron occupancy at various energy levels.\nKey feature: Sharp drop-off at the Fermi level that broadens with increasing temperature.\n\nElectron Velocity Distribution\n\nHigher average electron velocities compared to the Drude model due to quantum effects.\nVelocity distribution is discrete rather than continuous.\n\nThermal Properties\n\nExplains how electronic heat capacity affects thermal conductivity.\nFermi level’s stability over temperature changes impacts thermal properties.\n\n\n\n\nQuantum Mechanical Intuition\n\nDiscussion on teaching methodologies:\n\nClassical mechanics provides foundational intuition.\nGradually introducing quantum concepts adds depth to understanding.\n\nImportance of combining classical and quantum perspectives for comprehensive learning.\n\n\n\nPractical Applications\n\nHall Effect Sensors\n\nWidely used in microelectronics and position sensing.\nLibraries available for integrating Hall Effect sensors with microcontrollers like Arduino.\n\n\n\n\nAdditional Comments\n\nExploring the future of physics education with quantum intuition.\nPotential of neural networks in discovering new physical equations.\nRelation between classical models and emerging quantum effects in materials science.",
+    "crumbs": [
+      "X Spaces Discussions",
+      "Ch. 1-4"
+    ]
+  }
+]
