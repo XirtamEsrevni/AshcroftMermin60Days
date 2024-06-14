@@ -1,0 +1,14 @@
+---
+title: "Sommerfeld Theory (pp. 30-33)"
+author: 
+  - name: "Xirtam Esrevni"
+    email: "Xirtam.Esrevni@protonmail.com"
+    affiliation: 
+      - name: "Hilbert Space"
+  - name: "Book Club Cohort"
+    affiliation: "Twitter Space"
+keywords:
+  - Independent Electron
+  - Sommerfeld Theory
+license: "CC BY"
+---

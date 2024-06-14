@@ -1,0 +1,2696 @@
+WEBVTT
+
+00:30.000 --> 00:37.000
+Hopefully it'll work a little bit better now.
+
+00:37.000 --> 00:46.000
+Can you guys hear me now?
+
+00:46.000 --> 00:48.000
+Yes.
+
+00:48.000 --> 00:50.000
+Okay, great.
+
+00:50.000 --> 00:54.000
+Okay, seems like it's working a little bit better now.
+
+00:54.000 --> 00:56.000
+Let me just add everyone to speakers.
+
+00:56.000 --> 01:00.000
+I think previously I got confused about muting and unmuting myself.
+
+01:00.000 --> 01:02.000
+Oh, gotcha, okay.
+
+01:02.000 --> 01:06.000
+Yeah.
+
+01:06.000 --> 01:12.000
+Okay, yeah, sometimes it works better on my phone, so I'll just run it from here.
+
+01:12.000 --> 01:19.000
+Yeah, so by the way, yeah, so how did the reading go for everyone?
+
+01:19.000 --> 01:31.000
+I'm just kind of curious where people are in the book and stuff.
+
+01:31.000 --> 01:36.000
+I found the material a little bit too dense for me to get into immediately.
+
+01:36.000 --> 01:43.000
+It's sort of not the stuff that I'm familiar with, but the ideas, the high level ideas were really fascinating.
+
+01:43.000 --> 01:54.000
+I didn't get through a lot of the technical details, but I think I got through quite a few core concepts, so that was helpful.
+
+01:54.000 --> 01:58.000
+Cool, nice, yeah.
+
+01:58.000 --> 02:08.000
+Yeah, I think especially in the first, I like the first chapter a lot because it's kind of a nice, very simple physical picture of things with the Druda model.
+
+02:08.000 --> 02:15.000
+And then things got a bit more complicated, but you can kind of still keep the Druda model picture in mind in some ways, I think.
+
+02:15.000 --> 02:25.000
+Yeah, I took this my senior year of undergrad at the Solid State Physics course, so it's been a while, but coming back to this now.
+
+02:25.000 --> 02:31.000
+Yeah, I, it was much easier to absorb a second time than the first time.
+
+02:31.000 --> 02:48.000
+Nice. Yeah, I found the same thing that like, you know, yeah, I took like one solid State Physics course in grad school, but it was kind of, you know, it's just a lot of different things, a lot of different kind of topics and a lot of different like theories that go into it.
+
+02:48.000 --> 02:56.000
+So it's definitely worth like rereading, I think.
+
+02:56.000 --> 02:59.000
+But yeah, go ahead.
+
+02:59.000 --> 03:12.000
+Just to, you know, give you my background, I did one year of physics in my undergrad as a sort of 25% of my computer science degree is a requirement for natural sciences.
+
+03:12.000 --> 03:20.000
+So that's sort of, you know, basic underground undergrad physics, that's the sort of the background I'm starting with.
+
+03:20.000 --> 03:29.000
+And that's why this, this is a little bit technical, if it's something that I've done in my undergrad before, then I probably would have found it much easier to follow.
+
+03:29.000 --> 03:31.000
+Right. Gotcha.
+
+03:31.000 --> 03:46.000
+Okay, cool. Yeah. Well, so I think that the pace of the reading was pretty aggressive. I'm actually slightly behind. I'm kind of still, I mean, I've skimmed most of chapter four now, but still kind of need to go back and read parts more carefully.
+
+03:47.000 --> 04:01.000
+So I was thinking like, maybe today we can just try to talk through really like chapters one and two, three is pretty short. So like, I mean, it's basically just kind of saying like, what, why the theories of the chapters one and two are inadequate, kind of inadequate.
+
+04:01.000 --> 04:09.000
+But yeah, that was kind of, I think might be a good goal if we could just talk through chapters one and two.
+
+04:09.000 --> 04:29.000
+And I was thinking like we could maybe like one thing we could try to do is like the, so the chapters are broken down into like subsections. And so like maybe kind of people could like volunteer to basically like summarize each like chapter subsection for us and kind of dial in on like what the important results are,
+
+04:29.000 --> 04:40.000
+especially just kind of like a higher abstract level, like, you know, what the, what the form was me is what the model is that's being kind of proposed, I think.
+
+04:40.000 --> 04:49.000
+But yeah, I also want to just go back and like say a little bit more about like why I want to read this book and the reading club in general.
+
+04:50.000 --> 04:57.000
+I put up like a few comments about this and like this notion I made, I'll send the notion again in our group chat, by the way.
+
+04:57.000 --> 05:18.000
+But it kind of sprung out of like some things we're working on it at normal computing with like this thermal computing stuff is that it's it's a kind of like analog computing where instead of doing a lot of error correction and setting all the voltages to be one or zero all the time, you just allow the voltages to change freely under kind of some differential equation with when there's also in the presence of noise.
+
+05:19.000 --> 05:30.000
+And if you do that, then you can use the noise in the dynamics of a circuit like an electronic circuit to sample from interesting probability distributions and like some of which are useful in machine learning and stuff.
+
+05:30.000 --> 05:42.000
+But when we're doing this approach where we're like allowing the noise in and we're not doing error correction, you need to like understand the distribution of the noise really well kind of more than you would have to if you were doing error correction.
+
+05:42.000 --> 05:48.000
+It's really important to understand that like the properties of the noise, if you want to actually use it as kind of as a resource.
+
+05:48.000 --> 05:51.000
+And I think that like there's still like some kind of gaps.
+
+05:51.000 --> 05:59.000
+Definitely in my knowledge, but even just in general in in in like the knowledge in general that's always easily available in noise in like semiconductor.
+
+05:59.000 --> 06:10.000
+I guess while we wait for Max, one of the things I really liked was, you know, them mentioning the kind of size scales for a lot of these things.
+
+06:10.000 --> 06:20.000
+I've also done some kind of order of magnitude calculation stuff and the basis is often what are the size of atoms, you know, tens of angstroms.
+
+06:20.000 --> 06:31.000
+What is the charge scale that we're talking about here which is like electron scale 10 to the minus 19 clues.
+
+06:31.000 --> 06:39.000
+And just like, you know, why are things transparent or not we hit that like plasma frequency and what that was.
+
+06:39.000 --> 06:48.000
+I thought there was a lot of like important conceptual tools about how a lot of solids work that was in here that was cool.
+
+06:48.000 --> 06:53.000
+So I think James really can't hear me. Can you other guys hear me.
+
+06:53.000 --> 06:56.000
+James, can you hear Max.
+
+06:56.000 --> 06:58.000
+No, sorry.
+
+06:58.000 --> 06:59.000
+Okay.
+
+06:59.000 --> 07:05.000
+Okay, so maybe you should try rejoining this by speaking when you started.
+
+07:05.000 --> 07:10.000
+No worries that you rejoined it'll probably probably help sort of out. Okay, gotcha.
+
+07:10.000 --> 07:20.000
+But okay, assuming everyone else in here maybe yeah that was that was an awesome comment, you know, James making which yeah we'll definitely get to that.
+
+07:20.000 --> 07:31.000
+Yes, anyway, yeah, those basically summarizing what why I want to read the book is just to understand the physics of the semiconductors much more so that we can understand the noise better in like transistors and stuff.
+
+07:32.000 --> 07:34.000
+Maybe. Oh hi James.
+
+07:34.000 --> 07:37.000
+Yeah, can you hear me now.
+
+07:37.000 --> 07:38.000
+Yeah, I can.
+
+07:38.000 --> 07:40.000
+Great. Okay, cool.
+
+07:40.000 --> 07:47.000
+But yeah, so I was thinking like we'd start with this like first chapter and I guess like the first subsection of it on like basic assumptions of the model.
+
+07:47.000 --> 08:00.000
+And like anyone kind of want to give us their take on that like just summarizing what it is and what are the main results in there.
+
+08:00.000 --> 08:18.000
+I think the, the, the, the drood model, I think the most interesting and fascinating aspect of it is that drood simply applied the kinetic theory of gases that treats particle collisions and they're very, very different
+
+08:18.000 --> 08:30.000
+circumstances that would you expect happen in metal with electrons and ions, and so on and actually got pretty, pretty useful result out of it.
+
+08:30.000 --> 08:42.000
+So, you know, the sort of like a key takeaway for me was that, ultimately, all those theories have something to say about the movements of electron in the medium.
+
+08:42.000 --> 08:50.000
+And this is kind of like, you know, improving the model architecture you look at it from the sort of perspective of like, you know, deep learning speak.
+
+08:50.000 --> 09:09.000
+No matter what you what you start with like some some good model, some simple model can can already give you pretty good results. And then as you account for more constraints and how the movement of electrons can actually happen with more sophisticated models so you remove
+
+09:09.000 --> 09:22.000
+degrees of freedom right and in a in a kinetic theory of gas, gas molecules have a lot of degrees of freedom there's this assumption of Cartesian space space for action so they're moving for the void unobstructed.
+
+09:22.000 --> 09:34.000
+They're the only interactions are these elastic collisions collisions don't cause the loss of energy and so on so forth so these are really really unconstrained simple simple assumptions.
+
+09:34.000 --> 09:45.000
+And as these models kind of evolve your we're putting in more and more constraints about where where electrons can actually find themselves, meaning to better results.
+
+09:45.000 --> 10:01.000
+Yeah, yeah, definitely definitely like yeah I think that's definitely a good way to look at it of like, yeah, it's starting off with this simple kind of like model that's unrealistic and in the view of like modern physics, but like is still explains a lot of, you know, of properties.
+
+10:01.000 --> 10:17.000
+And like, interestingly, like even when you account for all the quantum effects in modern physics you can still kind of like put things in terms of the simple true to model. Sometimes like you can, you can come up with like effective parameters and like effective, you know, like the mean like what's the mean free path of the electron and what's like the
+
+10:17.000 --> 10:19.000
+scattering time and stuff like that.
+
+10:19.000 --> 10:24.000
+Yeah, um, yeah, that's that's what I thought was one question I had.
+
+10:24.000 --> 10:28.000
+Can you guys hear me sorry. Yeah, sure go ahead.
+
+10:29.000 --> 10:32.000
+Yeah, the one thing I thought was just independent.
+
+10:32.000 --> 10:49.000
+I didn't get much past chapter one but like I intuitively understand kind of the assumption three and here which is that they're assuming an electron gets a collision with probability per unit time one over T or one over tau.
+
+10:50.000 --> 11:01.000
+Like, why does that mean the probability of an electron undergoing a collision is DT over tau.
+
+11:01.000 --> 11:14.000
+Oh, right. So yeah, this actually this is a good, a good thing to look at. So the first like problem in the book problem one that was actually the only one I worked out on the notion a little bit, but it kind of goes into this.
+
+11:14.000 --> 11:20.000
+This assumption three, which is basically assuming that the collisions are a gloss on process.
+
+11:20.000 --> 11:34.000
+But I would think of it as as the assumption is the DT over tau. And then what he says before, with probability per unit time one over tau, that's like kind of a less precise way of saying it that's not exactly clear.
+
+11:34.000 --> 11:47.000
+But really the kind of core mathematical statement of the assumption is what he says after that, which is the probability of an electron undergoing a collision in any infinitesimal time interval of length DT is just DT over tau.
+
+11:47.000 --> 12:01.000
+And it's important that that statement is only correct when DT is infinitesimal, because if DT were larger, it wouldn't. And you would get like this kind of exponential like thing.
+
+12:01.000 --> 12:07.000
+The probability of having a collision is something like one minus E to the minus T over tau or something.
+
+12:07.000 --> 12:08.000
+Sure.
+
+12:08.000 --> 12:10.000
+Okay.
+
+12:10.000 --> 12:12.000
+Good explanation.
+
+12:13.000 --> 12:14.000
+Yeah.
+
+12:14.000 --> 12:22.000
+So isn't sort of fair to say that it's kind of almost like saying that at a small enough interval, just the linear approximation is fine.
+
+12:22.000 --> 12:37.000
+Right. Yeah, that's, that's, that's right. Yeah, the like the exponential function, if you look at it near, you know, E to the E to the minus T when you look near T equals zero, it just looks, you look so linear. Yeah.
+
+12:37.000 --> 12:38.000
+Right.
+
+12:38.000 --> 12:51.000
+And yeah, I guess just to put a little bit more detail now, like the key like trick that's used in deriving like, like, so let's say we know that the time the probability in length DT infinitesimal DT is DT over tau.
+
+12:51.000 --> 12:58.000
+How do you figure out the probability of a collision happening in a kind of non infinitesimal, let's call it delta T, which is a long interval of time.
+
+12:58.000 --> 13:04.000
+Well, what you do is you say, I can take this delta T and I can divide it into n pieces.
+
+13:04.000 --> 13:10.000
+Like maybe I divide delta T into 10 pieces. Okay. Each of those pieces is smaller. It's still not infinitesimal.
+
+13:10.000 --> 13:15.000
+You can't get infinitesimal by dividing something finite into a finite number of pieces.
+
+13:15.000 --> 13:25.000
+But we, we can kind of take the limit as, as n goes to infinity as we're dividing the thing into a, you know, larger and larger number of pieces.
+
+13:25.000 --> 13:32.000
+And then when those pieces get really small, like, what's the, what's the probability of not having a collision?
+
+13:32.000 --> 13:42.000
+Well, you can look at each of those little intervals of time DT and say, I won't have a collision in this interval DT with probability one minus DT over tau.
+
+13:42.000 --> 13:51.000
+And so then the probability of not having any collision at all is one minus DT over tau to the n, because you have these n different intervals.
+
+13:52.000 --> 14:04.000
+And then you can basically use like this definition of the exponential function, what we're going to take the limit of like, yeah, one minus x over n all to the n as n goes to infinity is like e to the, e to the n basically.
+
+14:04.000 --> 14:08.000
+And so that's how you get this like probability for finite lengths of time.
+
+14:08.000 --> 14:11.000
+Makes fairly, really good sense.
+
+14:11.000 --> 14:13.000
+Great. Cool. Yeah.
+
+14:13.000 --> 14:16.000
+Yeah. So I think that covers the assumption three pretty well.
+
+14:16.000 --> 14:22.000
+I mean, yeah, it's really important just to notice that like, this is the second parameter basically that comes into the model, right?
+
+14:22.000 --> 14:29.000
+The first parameter, the first really important parameter is lowercase n, which is the number density of electrons.
+
+14:29.000 --> 14:36.000
+So just how many electrons are, well, how many, how many free or how many valence electrons there are per cubic centimeter in the material.
+
+14:36.000 --> 14:38.000
+So that's like the first really important parameter.
+
+14:38.000 --> 14:43.000
+And the second really important parameter is this tau, which is the average amount of time.
+
+14:43.000 --> 14:51.000
+If you just pick a random electron in the material and you wait until it has a collision, on average, you'll have to wait enough to time tau before you see a collision.
+
+15:01.000 --> 15:06.000
+Yeah, so that covered, I think the first kind of few assumptions. Anyone have any thoughts about assumption four?
+
+15:08.000 --> 15:22.000
+I think that was mainly necessary for when they were doing the thermal stuff later on at the chapter to just get that to work right.
+
+15:22.000 --> 15:35.000
+So I guess it gets, it gets kind of tricky to differentiate between like when we're talking about the temperature of the electrons as opposed to just their motion because I kind of think about them as one and the same.
+
+15:36.000 --> 15:47.000
+Right, like what's the notion of thermal equilibrium when you're when you're talking about describing the like quote unquote thermal motions of these things within the solid.
+
+15:47.000 --> 16:01.000
+Right. Yeah, so I think that basically Druda in his time they did something really simple, which they said, like what's the average kinetic energy of a of a particle in an ideal gas.
+
+16:02.000 --> 16:04.000
+Well, it's like three halves KBT.
+
+16:04.000 --> 16:05.000
+Right.
+
+16:05.000 --> 16:06.000
+Okay.
+
+16:06.000 --> 16:14.000
+And they said, well, let's just say that I want an electron with exactly the kinetic energy three halves KT.
+
+16:14.000 --> 16:19.000
+Well, I can figure I know the mass of an electron and so I can figure out what velocity has to be.
+
+16:19.000 --> 16:22.000
+Now it will have to be a really high velocity, right?
+
+16:23.000 --> 16:30.000
+So that's how they calculated like what the what the speed of the electron has to be after each collision.
+
+16:30.000 --> 16:40.000
+I think they just assumed like it's going to be such that its energy is three halves KT and then the direction is random.
+
+16:40.000 --> 16:41.000
+So it happened.
+
+16:41.000 --> 16:49.000
+So after each collision, the electron takes off with a with a velocity in a random direction with the right magnitude.
+
+16:49.000 --> 16:52.000
+So it has three halves KT of kinetic energy.
+
+17:02.000 --> 17:14.000
+But yeah, I find like to visualize it like the picture I have in mind is like if you've ever seen like a video of that that game machine Pachinko or Quinko, I think is another kind of version of it.
+
+17:14.000 --> 17:20.000
+But what it looks like is you have a ball that's kind of or many balls that are like falling through this board and the board has a bunch of pegs in it.
+
+17:20.000 --> 17:27.000
+And the ball will hit one of the pegs bounce off and then hit another peg and bounce off and it kind of falls down because pushed down by gravity.
+
+17:27.000 --> 17:31.000
+But at the same time, each time it hits a peg, it kind of bounces in a random direction.
+
+17:31.000 --> 17:39.000
+And that's like very much what I think the picture you should have in mind of how a metal behaves in an electric field in the Druta model.
+
+17:39.000 --> 17:43.000
+Because if you have an electric field, each electron is being pushed in some direction.
+
+17:43.000 --> 17:47.000
+So that's analogous to gravity like pulling the balls down on the Pachinko board.
+
+17:47.000 --> 17:52.000
+But then each time it hits a nucleus, it bounces off in a random direction.
+
+17:52.000 --> 17:57.000
+And so it's you can kind of think of all the electrons being moving through the material.
+
+17:57.000 --> 18:01.000
+They're moving in on average, they're moving the same direction as the electric field.
+
+18:02.000 --> 18:10.000
+But if you look at any one electron, it's not going to be moving exactly in that direction because it's going to be bouncing off of the nuclei.
+
+18:10.000 --> 18:13.000
+So you can think of it as like that kind of Pachinko board, I think.
+
+18:14.000 --> 18:16.000
+That's a good picture.
+
+18:16.000 --> 18:28.000
+Okay, so I think that's like a good picture to have in mind.
+
+18:28.000 --> 18:30.000
+We talked about what the assumptions were.
+
+18:30.000 --> 18:36.000
+Okay, so I guess for now we're on to this next part, DC electrical conductivity of a metal.
+
+18:36.000 --> 18:44.000
+Did anyone want to kind of take a stab at summarizing that little section of DC electrical conductivity of a metal?
+
+18:45.000 --> 18:48.000
+Starting basically page seven, kind of.
+
+18:54.000 --> 18:58.000
+Well, Ohm's law is kind of just kind of just posited here, right?
+
+18:58.000 --> 19:04.000
+It's not exactly derived or do I have that backwards?
+
+19:04.000 --> 19:06.000
+Let's see.
+
+19:06.000 --> 19:13.000
+I would say that, yeah, Ohm's law is like stated, but then it is kind of derived.
+
+19:14.000 --> 19:26.000
+Basically, yeah, it's derived that the current has to be proportional to the voltage with some constant upper portionality.
+
+19:26.000 --> 19:36.000
+And then they take that equation and compare it to Ohm's law and says this constant upper portionality has to be the resistance or the resistivity.
+
+19:36.000 --> 19:43.000
+So resistivity depends on tau basically is the important result there, which makes sense.
+
+19:43.000 --> 19:44.000
+Right.
+
+19:44.000 --> 19:45.000
+Yeah, yeah.
+
+19:45.000 --> 19:52.000
+So if we look at equation 1.6 where they put it in terms of the conductivity there.
+
+19:52.000 --> 19:59.000
+So the more conductivity, you know, the more current you can drive with a constant voltage.
+
+19:59.000 --> 20:01.000
+And it's sigma is this conductivity.
+
+20:01.000 --> 20:05.000
+It says sigma equals n e squared tau over n.
+
+20:05.000 --> 20:06.000
+So let's see.
+
+20:06.000 --> 20:07.000
+So we just think about this.
+
+20:07.000 --> 20:08.000
+So what's it saying?
+
+20:08.000 --> 20:15.000
+It's saying that, right, how much currents do you get when you apply a constant voltage?
+
+20:15.000 --> 20:19.000
+You can think of the voltage like tilting the Pachinko board.
+
+20:19.000 --> 20:22.000
+If it's horizontal, there's no average motion.
+
+20:22.000 --> 20:23.000
+Everything just sits there.
+
+20:23.000 --> 20:27.000
+But the more I tilt it, I can tilt it all the way to the vertical.
+
+20:27.000 --> 20:31.000
+The more I tilt it, the more kind of push there is on each little ball.
+
+20:31.000 --> 20:33.000
+And that's analogous to the voltage.
+
+20:33.000 --> 20:38.000
+And then the current is just how many balls cross, you know, through the bottom of the
+
+20:38.000 --> 20:39.000
+board per unit time.
+
+20:39.000 --> 20:44.000
+So if you think about it, what's going to, in this conductivity is the ratio of those.
+
+20:44.000 --> 20:49.000
+So the conductivity is how many, if I tilt the board a little more, how much does that
+
+20:49.000 --> 20:55.000
+increase the current or the amount of balls that are flowing through, you know, the amount
+
+20:55.000 --> 20:59.000
+of balls that are, yeah, crossing or leaving the Pachinko board per unit time.
+
+20:59.000 --> 21:01.000
+And so if you think about what's going to affect that?
+
+21:01.000 --> 21:05.000
+One, having more balls on the Pachinko board will clearly affect that, right?
+
+21:05.000 --> 21:09.000
+Because if there are just more of them, and I tilt the board, then more are moving all
+
+21:09.000 --> 21:10.000
+of a sudden, right?
+
+21:10.000 --> 21:12.000
+So that's why we have an N here.
+
+21:12.000 --> 21:13.000
+It's equation 1.6.
+
+21:13.000 --> 21:16.000
+You see the conductivity is proportional to N.
+
+21:16.000 --> 21:17.000
+So that makes some sense.
+
+21:17.000 --> 21:22.000
+E squared, that's, you know, the square of the charge each electron carries.
+
+21:22.000 --> 21:24.000
+That's not really as important because that doesn't change.
+
+21:24.000 --> 21:27.000
+That, you know, that's a constant and the same with M.
+
+21:27.000 --> 21:29.000
+That's the mass of the electron, which doesn't change.
+
+21:29.000 --> 21:31.000
+But then there's this other factor of tau.
+
+21:31.000 --> 21:33.000
+So, yeah, I don't know.
+
+21:33.000 --> 21:36.000
+Is there maybe, I actually really thought this through, but is there a good way of
+
+21:36.000 --> 21:41.000
+thinking about this with this Pachinko board analogy for why when tau increases,
+
+21:41.000 --> 21:43.000
+you get more conductivity?
+
+21:43.000 --> 21:45.000
+Yeah, can you guys hear me?
+
+21:45.000 --> 21:46.000
+Yeah.
+
+21:46.000 --> 21:47.000
+Sorry.
+
+21:47.000 --> 21:51.000
+Somebody, who is that who just asked if we could hear them?
+
+21:51.000 --> 21:52.000
+James.
+
+21:52.000 --> 21:53.000
+Oh, yeah.
+
+21:53.000 --> 21:54.000
+Yeah.
+
+21:54.000 --> 21:55.000
+Sorry.
+
+21:55.000 --> 21:56.000
+Yeah, James, go ahead.
+
+21:56.000 --> 21:57.000
+Yeah.
+
+21:57.000 --> 21:59.000
+Maybe the other guy can't hear me.
+
+21:59.000 --> 22:01.000
+So it might be the problem.
+
+22:01.000 --> 22:02.000
+Oh, yeah.
+
+22:02.000 --> 22:05.000
+Can you hear James approximate phobia?
+
+22:05.000 --> 22:07.000
+I can't hear him.
+
+22:07.000 --> 22:08.000
+No.
+
+22:08.000 --> 22:09.000
+Okay.
+
+22:09.000 --> 22:10.000
+Okay.
+
+22:10.000 --> 22:11.000
+Gotcha.
+
+22:11.000 --> 22:12.000
+Yeah.
+
+22:12.000 --> 22:13.000
+We're having a lot of technical difficulties.
+
+22:13.000 --> 22:15.000
+Maybe maybe try rejoining or something that might sometimes seems to help.
+
+22:15.000 --> 22:16.000
+But yeah.
+
+22:16.000 --> 22:17.000
+All right.
+
+22:17.000 --> 22:18.000
+Yeah.
+
+22:18.000 --> 22:19.000
+James, go ahead.
+
+22:19.000 --> 22:20.000
+Yeah.
+
+22:20.000 --> 22:23.000
+I was just going to say the way I think about this is like, if there, you know,
+
+22:23.000 --> 22:29.000
+if you have something like a vacuum tube and like some anode and emitting
+
+22:29.000 --> 22:34.000
+electrons, and then the electrons are feeling a constant force.
+
+22:34.000 --> 22:35.000
+And so they should accelerate.
+
+22:35.000 --> 22:38.000
+If there was nothing they hit, they would just keep accelerating that
+
+22:38.000 --> 22:39.000
+whole time.
+
+22:39.000 --> 22:42.000
+And so the question that comes from like Ohm's law is like,
+
+22:42.000 --> 22:45.000
+when I have a constant voltage,
+
+22:45.000 --> 22:49.000
+why doesn't my current just increase more and more and more as I keep
+
+22:49.000 --> 22:54.000
+applying like more, I mean, in essence, like applying a force to these charges.
+
+22:54.000 --> 22:58.000
+And so if there are no collisions, I would expect, you know,
+
+22:58.000 --> 23:02.000
+things would accelerate, like the, you know, current should increase or whatever.
+
+23:02.000 --> 23:05.000
+Everything can go faster and faster before it hits something.
+
+23:05.000 --> 23:08.000
+And the more like Pachinko pegs I add,
+
+23:08.000 --> 23:12.000
+now they have to keep getting randomized and they can't keep increasing with
+
+23:12.000 --> 23:13.000
+velocity.
+
+23:13.000 --> 23:15.000
+The velocity is going to like randomize again.
+
+23:15.000 --> 23:20.000
+And so, yeah, that tau is just in essence kind of like density of collisions or
+
+23:20.000 --> 23:21.000
+something.
+
+23:21.000 --> 23:22.000
+Right.
+
+23:22.000 --> 23:25.000
+Yeah, I think that that sounds totally right to me.
+
+23:25.000 --> 23:29.000
+The closer together the pegs are on the board,
+
+23:29.000 --> 23:34.000
+the shorter a ball of travel is before it hits another peg.
+
+23:34.000 --> 23:38.000
+And that means that it's not going to get as much,
+
+23:38.000 --> 23:42.000
+it's not going to have as much time to kind of build up velocity due to being
+
+23:42.000 --> 23:44.000
+pushed down the board by gravity.
+
+23:44.000 --> 23:49.000
+The farther away those pegs are, the more kind of speed it builds up as it's,
+
+23:49.000 --> 23:53.000
+you know, after it's bounced off one, it starts to roll down and builds up speed
+
+23:53.000 --> 23:56.000
+and then it bounces off another and goes in a random direction and kind of loses
+
+23:56.000 --> 24:00.000
+that velocity in the direction of the potential gradient.
+
+24:00.000 --> 24:04.000
+And so I think, yeah, I think that's exactly right that the longer tau is,
+
+24:04.000 --> 24:07.000
+that basically means the pegs are farther apart or the things that the electrons
+
+24:07.000 --> 24:13.000
+are scattering off, which are nuclei are basically farther apart.
+
+24:13.000 --> 24:18.000
+And so it has, you know, a longer time to build up momentum between
+
+24:18.000 --> 24:19.000
+scatterings.
+
+24:19.000 --> 24:22.000
+And so then that just means that like each electron has more velocity in the
+
+24:22.000 --> 24:26.000
+direction of the voltage, basically, or I guess in the opposite direction of
+
+24:26.000 --> 24:28.000
+the voltage gradient.
+
+24:28.000 --> 24:29.000
+Yeah.
+
+24:29.000 --> 24:30.000
+Makes sense.
+
+24:30.000 --> 24:35.000
+Just give you kind of like a first picture of where you might get noise from
+
+24:35.000 --> 24:38.000
+or noise being related to resistance, rather, because, you know,
+
+24:38.000 --> 24:41.000
+if you have a lot of these collisions, right?
+
+24:41.000 --> 24:46.000
+If you have electrons, you know, in this kind of toy picture moving maybe
+
+24:46.000 --> 24:50.000
+backwards away from the normal direction of current or maybe off at an angle,
+
+24:50.000 --> 24:53.000
+changing the quote unquote signal.
+
+24:53.000 --> 24:59.000
+Whereas if it's just kind of unimpeded flow, you expect maybe less noise.
+
+24:59.000 --> 25:00.000
+Yeah.
+
+25:00.000 --> 25:01.000
+No, I think that's exactly right.
+
+25:01.000 --> 25:03.000
+So actually, this is really close to your way to stopping.
+
+25:03.000 --> 25:08.000
+I just sent this link in our chat of YouTube video and you pull it up.
+
+25:08.000 --> 25:10.000
+I think it's a great illustration of this.
+
+25:10.000 --> 25:13.000
+Like a, I guess a Galton board or something, but the same idea of this
+
+25:13.000 --> 25:14.000
+Pachinko board.
+
+25:14.000 --> 25:18.000
+And when it's set up right, all these little, these little metal balls fall
+
+25:18.000 --> 25:21.000
+through it and they bounce off all these pegs.
+
+25:21.000 --> 25:25.000
+And then you'll see that where they land is they form this normal distribution
+
+25:25.000 --> 25:27.000
+at the end of where they ended up.
+
+25:27.000 --> 25:31.000
+And I think that basically the more peg, like if you didn't have any pegs,
+
+25:31.000 --> 25:34.000
+they would all just fall exactly where they started.
+
+25:34.000 --> 25:37.000
+So if you started them from the same point and they do kind of start from this
+
+25:37.000 --> 25:40.000
+same point to the top, they would all fall directly below that point.
+
+25:40.000 --> 25:44.000
+But the more pegs you have, the broader that Gaussian distribution is going to be.
+
+25:44.000 --> 25:47.000
+And so you could think of that as like more noise basically.
+
+25:47.000 --> 25:49.000
+And so the pegs do two things.
+
+25:49.000 --> 25:53.000
+They first, they slow down the flow because the more pegs are the less,
+
+25:53.000 --> 25:55.000
+you know, the less speed they'll build up.
+
+25:55.000 --> 25:59.000
+And then they also increase the randomness of the direction or create noise.
+
+25:59.000 --> 26:00.000
+So yeah, this is a connection.
+
+26:00.000 --> 26:03.000
+I was pointing out a little bit ago about this fluctuation dissipation
+
+26:03.000 --> 26:06.000
+theorem thing where basically the amount of noise that something,
+
+26:06.000 --> 26:09.000
+you know, noise that something generates is proportional to the amount
+
+26:09.000 --> 26:11.000
+of like drag there is basically.
+
+26:20.000 --> 26:24.000
+But yeah, we're people to find that video I linked there.
+
+26:29.000 --> 26:31.000
+Yeah, I see it.
+
+26:31.000 --> 26:32.000
+Cool. Yeah.
+
+26:32.000 --> 26:35.000
+Yeah, I think it's a nice, nice little illustration.
+
+26:38.000 --> 26:39.000
+Okay.
+
+26:39.000 --> 26:43.000
+So yeah, I think we got a pretty good understanding of like equation 1.6
+
+26:43.000 --> 26:46.000
+basically, which is like really important.
+
+26:46.000 --> 26:48.000
+There's often this section.
+
+26:52.000 --> 26:53.000
+See.
+
+26:56.000 --> 27:00.000
+I don't know if I was hearing the whole thing, but so this may be a little off base,
+
+27:00.000 --> 27:05.000
+but I think another way to look at this instead of talking about more pegs,
+
+27:05.000 --> 27:07.000
+you can also think of it in the other way,
+
+27:07.000 --> 27:11.000
+which is if you just shoved more and more balls through, right?
+
+27:11.000 --> 27:13.000
+At some point you get enough.
+
+27:13.000 --> 27:16.000
+They constrain one another and they start to flow through.
+
+27:16.000 --> 27:17.000
+Right.
+
+27:17.000 --> 27:18.000
+Yeah.
+
+27:18.000 --> 27:19.000
+That's right.
+
+27:19.000 --> 27:20.000
+That's a really great.
+
+27:20.000 --> 27:23.000
+That's an emergent property that you suddenly see happen.
+
+27:23.000 --> 27:24.000
+Yeah.
+
+27:24.000 --> 27:28.000
+No, this is one thing here though is with the good model is it's an independent
+
+27:28.000 --> 27:30.000
+or electronic approach.
+
+27:30.000 --> 27:31.000
+Yeah.
+
+27:31.000 --> 27:32.000
+Exactly.
+
+27:32.000 --> 27:34.000
+So in real physics, yes, absolutely.
+
+27:34.000 --> 27:37.000
+If you have more balls, they're going to interfere with each other in the Druta model.
+
+27:37.000 --> 27:38.000
+It's such a simplified model.
+
+27:38.000 --> 27:41.000
+It doesn't even account for the electrons bouncing off each other.
+
+27:41.000 --> 27:44.000
+So in the Druta model, they would all just like go through each other and there wouldn't,
+
+27:44.000 --> 27:48.000
+and you know, there wouldn't be any like pressure of electrons on electrons basically,
+
+27:48.000 --> 27:50.000
+but that does like eventually get accounted for.
+
+27:50.000 --> 27:51.000
+But yeah.
+
+27:52.000 --> 27:53.000
+Yeah.
+
+27:53.000 --> 27:56.000
+Actually, I think because of the term and the numerator,
+
+27:56.000 --> 28:02.000
+you actually get increased in connectivity because I would increase the dense electron density would go up.
+
+28:02.000 --> 28:03.000
+Yeah.
+
+28:03.000 --> 28:04.000
+Yeah.
+
+28:04.000 --> 28:05.000
+Exactly.
+
+28:05.000 --> 28:06.000
+Yeah.
+
+28:10.000 --> 28:11.000
+Right.
+
+28:11.000 --> 28:12.000
+Okay.
+
+28:12.000 --> 28:13.000
+Cool.
+
+28:13.000 --> 28:14.000
+Yeah.
+
+28:14.000 --> 28:16.000
+That's a really great thing to raise because that's like one of the key,
+
+28:16.000 --> 28:18.000
+like or one of the important limitations of this model.
+
+28:18.000 --> 28:21.000
+I think is the independent electrons.
+
+28:21.000 --> 28:22.000
+Yeah.
+
+28:22.000 --> 28:23.000
+So, okay.
+
+28:23.000 --> 28:26.000
+So I guess that gets us to equation 1.11.
+
+28:26.000 --> 28:28.000
+I think which, or I guess 1.12.
+
+28:28.000 --> 28:31.000
+That's a good one to kind of land on is 1.12.
+
+28:31.000 --> 28:34.000
+I don't know anybody having thoughts about equation 1.12.
+
+28:44.000 --> 28:45.000
+Yeah.
+
+28:45.000 --> 28:52.000
+I think this was one of the key features of the models that this tau indicates this frictional dampening that occurs.
+
+28:52.000 --> 28:56.000
+It took me a while to understand how they got there.
+
+28:56.000 --> 29:00.000
+But that seems to be kind of the key feature.
+
+29:00.000 --> 29:01.000
+Mm-hmm.
+
+29:01.000 --> 29:05.000
+I mean, it probably would have been easier to derive just by saying there's,
+
+29:05.000 --> 29:10.000
+you know, a damping term and it's just Newton's second law with the damping term, right?
+
+29:10.000 --> 29:11.000
+Yeah.
+
+29:11.000 --> 29:13.000
+It looks like a like Landon and dynamics to me.
+
+29:13.000 --> 29:16.000
+I mean, it looks just like that.
+
+29:16.000 --> 29:17.000
+Right.
+
+29:17.000 --> 29:18.000
+Right.
+
+29:18.000 --> 29:22.000
+So it's almost like, it's like a Langevin equation, but where you've taken the average.
+
+29:22.000 --> 29:25.000
+And so there's no noise term anymore.
+
+29:25.000 --> 29:27.000
+I think that's pretty much exactly what it is.
+
+29:27.000 --> 29:32.000
+It's because this is the equation for the average momentum,
+
+29:32.000 --> 29:36.000
+not like the momentum of an individual electron.
+
+29:36.000 --> 29:41.000
+So, yeah, it's kind of a weird equation because it's not an equation for like, you know,
+
+29:41.000 --> 29:47.000
+any actual coordinate of the system, but for like this collective thing of like the average momentum, basically.
+
+29:47.000 --> 29:53.000
+But when you do take that average, yeah, you get this much simpler form where if we got rid of the drag,
+
+29:53.000 --> 29:55.000
+it would just be Newton's law.
+
+29:55.000 --> 30:01.000
+And then it's Newton's law with exactly with the drag term as part of the force, basically.
+
+30:01.000 --> 30:02.000
+Yeah.
+
+30:07.000 --> 30:16.000
+But yeah, I guess that one over Tau there is important because it basically means, right, the shorter the shorter the time is between collisions,
+
+30:16.000 --> 30:22.000
+which is like the pegs getting closer together, the more drag there is, which which makes a lot of sense, I think.
+
+30:22.000 --> 30:29.000
+So yeah, it's a nice kind of like intuitive model at this point, I'd say.
+
+30:30.000 --> 30:38.000
+I will point out that means that Tau, the units don't work right in this case because Tau should have units of like one over seconds.
+
+30:38.000 --> 30:44.000
+I mean, they probably do because it's a real equation, but like, you know, if we're interpreting it as like a drag,
+
+30:44.000 --> 30:49.000
+I think, you know, like stamping terms usually don't just have units of one over seconds.
+
+30:49.000 --> 30:52.000
+So that's like a little bit weird.
+
+30:52.000 --> 30:54.000
+Okay.
+
+30:54.000 --> 30:57.000
+Well, so so Tau has units of seconds, not one over seconds.
+
+30:57.000 --> 30:59.000
+Because I'm sorry, you're right.
+
+30:59.000 --> 31:00.000
+Yeah, yeah.
+
+31:00.000 --> 31:02.000
+But that's interesting, right.
+
+31:02.000 --> 31:09.000
+Like why do we have a drag term that has units of second because the drag term should have units of like force divided by velocity or something.
+
+31:09.000 --> 31:10.000
+Right.
+
+31:10.000 --> 31:11.000
+Yeah.
+
+31:11.000 --> 31:14.000
+So let's see what is what is forced by velocity.
+
+31:14.000 --> 31:18.000
+I guess it's, you know, right.
+
+31:18.000 --> 31:27.000
+There would be a, yeah, it's kilogram meters per second squared divided by meters per second, which would be like kilograms per second.
+
+31:27.000 --> 31:33.000
+So there would be a factor of like mass in there, I guess.
+
+31:33.000 --> 31:42.000
+Yeah, that is kind of interesting.
+
+31:42.000 --> 31:43.000
+Hmm.
+
+31:43.000 --> 31:59.000
+Yeah, I'm kind of curious about that now.
+
+31:59.000 --> 32:03.000
+I mean, if we, yeah, if we had like a normal drag force, it'll be like, yeah.
+
+32:03.000 --> 32:05.000
+Okay, DPVT equals the force.
+
+32:05.000 --> 32:15.000
+And let's say the force of drag is equal to minus K times velocity, where now K is going to have units of force over velocity.
+
+32:15.000 --> 32:28.000
+But that's also equal to K times mass over or K over mass times momentum.
+
+32:28.000 --> 32:38.000
+Well, like, yeah, a simplest, simplest drag terms just in like, you know, kinematics are usually dependent on velocity and not momentum.
+
+32:38.000 --> 32:39.000
+Right.
+
+32:39.000 --> 32:40.000
+Right.
+
+32:40.000 --> 32:41.000
+Yeah, yeah.
+
+32:41.000 --> 32:52.000
+So I think that the key is that they, because they've written this equation in terms of momentum on the right hand side, we could basically imagine that we had instead put, you know, MV there.
+
+32:52.000 --> 32:56.000
+And then the drag coefficient is really M over tau.
+
+32:56.000 --> 32:58.000
+That might be a better way to think of it is.
+
+32:58.000 --> 32:59.000
+Yeah.
+
+32:59.000 --> 33:00.000
+Yeah.
+
+33:00.000 --> 33:01.000
+Thanks.
+
+33:01.000 --> 33:02.000
+Right.
+
+33:02.000 --> 33:09.000
+Yeah, that's a good, good insight.
+
+33:09.000 --> 33:12.000
+Okay, so I guess the next little subsection is the Hall effect.
+
+33:12.000 --> 33:18.000
+The Hall effect is pretty cool because I, you know, it's one of these things where it doesn't seem that important.
+
+33:18.000 --> 33:29.000
+It's like, why do we really care that much about, you know, driving a current in a magnetic field and then measuring this voltage in the direction perpendicular to the wire?
+
+33:29.000 --> 33:32.000
+It doesn't seem like something that's very practically useful.
+
+33:32.000 --> 33:46.000
+But it's, it turns out that it's like the only way to measure like certain things like this, this kind of effect, like, for example, they talk about how it should like, you can tell the difference between having positive charge carriers and negative charge carriers.
+
+33:46.000 --> 34:02.000
+Like, so in other words, if you imagine a parallel universe where the wires all have free positrons, you know, or like positive charges are the things that are carrying the current, a lot of things would work exactly the same way.
+
+34:02.000 --> 34:05.000
+You wouldn't know if you were in this parallel universe.
+
+34:05.000 --> 34:08.000
+There wouldn't be any measurement you could take except for the Hall measurement.
+
+34:08.000 --> 34:14.000
+That's like the one thing you could do, I guess, to tell whether the charge carriers are positive or negative.
+
+34:14.000 --> 34:18.000
+But yeah, I don't know, that was kind of my thought about what was interesting about it.
+
+34:18.000 --> 34:26.000
+But yeah, I don't know, anyone else have any insights about this part on the Hall effect?
+
+34:26.000 --> 34:32.000
+It sets you up for two Nobel Prizes later on when you get to the quantum Hall effects and fractional quantum effects.
+
+34:32.000 --> 34:35.000
+Right. Yeah, yeah.
+
+34:35.000 --> 34:41.000
+Yeah.
+
+34:42.000 --> 34:48.000
+And those effects are both like electron-electron interaction effects, which we're totally neglecting here.
+
+34:48.000 --> 34:51.000
+And I think we'll neglect for much of the rest of the book.
+
+34:51.000 --> 34:56.000
+Right. Yeah.
+
+34:56.000 --> 35:04.000
+Yep. So yeah, I guess the other math of the Hall effect is like, I don't think it's like super important for us to do all the geometry.
+
+35:04.000 --> 35:10.000
+I mean, at some point, you just kind of look at figure 1.3 and convince yourself that it works.
+
+35:10.000 --> 35:18.000
+But let's see, I don't know, are there any, I'm trying to think of any of these equations that are good to look at a little more closely.
+
+35:26.000 --> 35:28.000
+121.
+
+35:28.000 --> 35:30.000
+Mm-hmm.
+
+35:30.000 --> 35:34.000
+Oh, right. Yeah. R-H was minus one over.
+
+35:35.000 --> 35:44.000
+The key here is that you have to assume that the Hall field is, they say, no transverse current. So that was the one thing that you have to constrain by.
+
+35:44.000 --> 35:46.000
+Right.
+
+35:46.000 --> 35:51.000
+Wait, did you say there wasn't any use for it? Is that what you said earlier?
+
+35:51.000 --> 36:02.000
+Um, no, there are, well, one use for it is that I think they use like Hall, they, I think they use the Hall effect or the quantum Hall effect in like the redefinition of like the SI base units.
+
+36:03.000 --> 36:12.000
+Well, it's really important in microelectronics and, you know, because you can use Hall effect sensors to indicate position or change in position.
+
+36:12.000 --> 36:14.000
+I see. Yeah, yeah, it makes sense.
+
+36:14.000 --> 36:17.000
+Yeah, I use it all the time and all sorts of stuff. I see.
+
+36:17.000 --> 36:19.000
+Yeah, like the mechanical shit.
+
+36:19.000 --> 36:31.000
+Gotcha. Yeah, I was kind of just, yeah, saying like when I first heard of the Hall effect, it didn't seem like something that's important because it just seems like kind of an obscure phenomena where you're looking at like the voltage parallel to the,
+
+36:31.000 --> 36:40.000
+or perpendicular to the direction of current flow, but it turns out to be super important, both like theoretically and practically. But yeah, I didn't actually even know about all these applications.
+
+36:40.000 --> 36:42.000
+So that's pretty, pretty cool.
+
+36:42.000 --> 36:50.000
+And now they're ubiquitous and fairly cheap. So you can use them to do all sorts of position sensing.
+
+36:50.000 --> 36:59.000
+Oh, cool. Yeah, yeah, how does that, how does that work? Yeah, what do you like? Yeah, how do you measure the position with the Hall sensors?
+
+36:59.000 --> 37:11.000
+Well, I mean, you can put, so if you put a metal plate or another magnet on a thing that's moving, you can tell if it's closer or further away, I believe, in terms of the voltage change.
+
+37:11.000 --> 37:17.000
+Oh, okay, okay. I see. So is it like you're kind of measuring the magnetic field strength?
+
+37:17.000 --> 37:21.000
+Yeah, it's like, you know, is the door open or closed?
+
+37:21.000 --> 37:26.000
+If you have a sensor on there, you can tell if the door has been closed or not.
+
+37:26.000 --> 37:38.000
+Okay, gotcha. I see. Or if you wanted to advance some kind of pin very slowly into a hole for some reason and some actuator, then you could have a Hall effect sensor there, too.
+
+37:38.000 --> 37:43.000
+I see. Okay, I see.
+
+37:43.000 --> 37:57.000
+Right, so yeah, it probably has to do with the, when a magnet gets like farther or closer to the conductor, I guess the magnetic field strength changes, and so that changes the Hall of Coefficient, I guess.
+
+37:57.000 --> 37:58.000
+I see.
+
+37:58.000 --> 38:13.000
+So, I mean, you just see it's just generally useful for precision movement measurements and also whether, you know, that they use them even in, you know, high-speed ejection molding, ejection pins and various things and just kind of everywhere.
+
+38:13.000 --> 38:20.000
+Cool, gotcha. Yeah. Hi, Walter. How's it going?
+
+38:20.000 --> 38:22.000
+Good, how are you?
+
+38:22.000 --> 38:25.000
+Yeah, not bad, not bad.
+
+38:25.000 --> 38:27.000
+Nice.
+
+38:27.000 --> 38:40.000
+I had a question. Someone was talking about the Hall sensor and the applications for it. I'm wondering if, you know, is there any kind of like library models that like are specific to opening and sensing when like the door is closed or something like that?
+
+38:40.000 --> 38:46.000
+Like if there's only code like Python libraries related to that, you know?
+
+38:46.000 --> 38:56.000
+Yeah, I don't know. I mean, that's a good question. Yeah. Anyone else know about that?
+
+38:56.000 --> 39:00.000
+All right, I'm just curious. Thanks, sir.
+
+39:00.000 --> 39:07.000
+Yeah, I mean, I can do a quick search like, yeah, all-effect open source library or something.
+
+39:07.000 --> 39:09.000
+Yeah, that's exactly what I was thinking about.
+
+39:09.000 --> 39:17.000
+All-effect sensor Arduino library. That seems kind of like what you're interested in.
+
+39:17.000 --> 39:27.000
+Also, PLCs are going to take the outputs of them. So, you know, program logic controllers doing all sorts of stuff with libraries, yeah.
+
+39:27.000 --> 39:30.000
+And I would check there.
+
+39:30.000 --> 39:32.000
+Okay, sounds good. Just wondering. Thanks.
+
+39:32.000 --> 39:38.000
+Yeah, I think this is exactly that. If you look up, yeah, Soldered Hall Effect Sensor Arduino library.
+
+39:38.000 --> 39:49.000
+I found this GitHub page where it seemed to have, yeah, it seems to be some kind of library for measuring, for talking to a Hall Effect Sensor using an Arduino or something like that.
+
+39:49.000 --> 39:52.000
+Okay.
+
+39:52.000 --> 40:04.000
+Right, but yeah, so I guess the important thing, or yeah, so one of the important things there was that in this Hall Effect, in this equation 1.21, this RH basically determines like how strong the Hall Effect is.
+
+40:04.000 --> 40:11.000
+In other words, when you apply a magnetic field, how much does that change this like transverse voltage?
+
+40:11.000 --> 40:22.000
+And so there's E there in the bottom, the electron charge, and if we were using positrons instead, then that would change the sign of the Hall coefficient.
+
+40:22.000 --> 40:33.000
+And actually that'll come up later in the book, I think, when you have materials where the current is being carried by holes, or weirdly being carried by the absence of electrons instead of by electrons.
+
+40:33.000 --> 40:43.000
+So that's one of the ways you can get like the positive Hall coefficient or something. But yeah, it's also proportional to N, which shouldn't be too surprising because a lot of things are going to be proportional to the number density.
+
+40:43.000 --> 40:47.000
+Yeah.
+
+40:47.000 --> 40:53.000
+I think another thing that to notice is that the effect of tau is not there, there's no dependency on it.
+
+40:53.000 --> 40:56.000
+So, right.
+
+40:56.000 --> 40:57.000
+Right, yeah, yeah.
+
+40:57.000 --> 41:00.000
+Which is a key outcome of the Drudin model.
+
+41:00.000 --> 41:02.000
+Right.
+
+41:02.000 --> 41:05.000
+Yeah.
+
+41:05.000 --> 41:10.000
+Yeah, that is super, you know, super interesting. It doesn't depend on tau. Yeah.
+
+41:10.000 --> 41:25.000
+Right. So, yeah, I guess that's kind of cool because it gives you a way to look to like measure the electron charge independently of tau, which, or you can measure N, for example, independently of tau, because you know that you know the electron charge, I guess, you can measure N.
+
+41:25.000 --> 41:45.000
+And so you can figure out what N is by doing the Hall effect measurement, and then you can measure the conductivity because you know N, and that can tell you tau, I guess, so that's kind of cool.
+
+41:45.000 --> 41:50.000
+Yeah, so there's part on the AC conductivity.
+
+41:50.000 --> 42:03.000
+And there it kind of talks about how like metals are like, I think they were like opaque below a certain frequency, but then they become transparent like above a certain frequency, basically.
+
+42:03.000 --> 42:13.000
+And that could be predicted by the Drudin model, I guess.
+
+42:14.000 --> 42:22.000
+Yeah, equation 138 is this plasma frequency when you go transparent or not.
+
+42:22.000 --> 42:25.000
+Oh, right. Yeah, yeah.
+
+42:25.000 --> 42:32.000
+Again, the key thing here is that the frequency is very high compared to like the tau. So that's the key thing.
+
+42:32.000 --> 42:34.000
+Oh, yeah, I see.
+
+42:34.000 --> 42:37.000
+I think it's on the page before we talk about like the conditions for it.
+
+42:37.000 --> 42:42.000
+Right. Yeah. So you have to have many oscillations per collision time, I guess.
+
+42:43.000 --> 42:48.000
+I see. Yeah.
+
+42:48.000 --> 42:56.000
+I see.
+
+42:56.000 --> 43:11.000
+Yeah, that's kind of interesting. I guess maybe there's a way of even understanding that from our Pachinko board analogy that like if you if you're driving the if you now instead of just sloping the board we're tipping the board back and forth right at some frequency where
+
+43:11.000 --> 43:17.000
+first slanting it to the left and then slanting it to the right. And that's basically what the electric field is doing. I mean, ignoring the magnetic field.
+
+43:17.000 --> 43:23.000
+That's basically what the electric field is doing to the electrons and the material is first pushing them one way and then pushing them back the other way.
+
+43:23.000 --> 43:33.000
+And now if we do this slowly, like first tip it slowly to the left and then tip it slowly to the right, then they'll all kind of start to drift in one direction and reach kind of a stable average velocity.
+
+43:33.000 --> 43:45.000
+And then when we tip it back, they'll do the same thing in the other direction. But if we tip it kind of quickly to the left and the right, then I guess they oscillate.
+
+43:45.000 --> 43:54.000
+They don't travel far enough to really hit a peg. So like a lot of the electron, a lot of the balls aren't actually going to hit a peg because they aren't moving very far because we're kind of tipping it back and forth quickly.
+
+43:54.000 --> 44:10.000
+And I think that's basically what's happening when you're driving, when you're shooting light into a metal at a frequency above the plasma frequency is that you're oscillating the electrons fast enough that they don't really travel far enough to hit to scatter off a nucleus, I guess.
+
+44:10.000 --> 44:14.000
+I think it's exactly how to think about it.
+
+44:14.000 --> 44:19.000
+Yeah, that's, yeah.
+
+44:19.000 --> 44:23.000
+Right.
+
+44:23.000 --> 44:50.000
+Okay, cool. So yeah, I think we're making some good, some good progress here working our way through. Yeah, I guess just another key point from that part of the book is, well, there's a few ones, but maybe like 1.29 is like the AC conductivity, which is like analogous to the other, the previous result, which wasn't the DC conductivity when you just have a constant field.
+
+44:50.000 --> 44:58.000
+And now there's basically this factor of like 1 over 1 minus i omega tau.
+
+44:58.000 --> 45:11.000
+And I guess, so that's going to be, it's weird, it's going to be a complex number. But if you think about what's the modulus of that complex number, it looks kind of like a bell curve, but it's not like a Gaussian.
+
+45:11.000 --> 45:25.000
+It decays much slower than it doesn't decay nearly as quickly as a Gaussian, but it's still kind of this bell curve that's centered at zero. And so that means that the highest conductivity is when the frequency is zero.
+
+45:25.000 --> 45:40.000
+And then when you increase the frequency, it goes down, basically, I think.
+
+45:40.000 --> 45:52.000
+Okay. Yeah, I think we covered kind of this part on the AC conductivity. There's a bit more math there, but that's like the basic ideas of it.
+
+45:52.000 --> 46:06.000
+And next is the thermal conductivity section. Yeah, any thoughts on the part on thermal conductivity?
+
+46:06.000 --> 46:21.000
+My main takeaway from this is a little bit farther into that section where they have the kind of the famous flaw that we've been friends. And you find out, well, the reason it works so well is because you have this cancellation of errors.
+
+46:21.000 --> 46:33.000
+It works out perfectly. So I remember reading about that in college, but I forgot. And so that's why this model is particularly successful.
+
+46:33.000 --> 46:38.000
+Right. Yeah.
+
+46:38.000 --> 46:43.000
+Yeah, let's see. Where is the Wheatman friends? Oh, yeah, it was that Kappa over sigma.
+
+46:43.000 --> 46:54.000
+It's the ratio of the thermal conductivity to the conductance conductivity and just kind of an ideal gas type model.
+
+46:54.000 --> 46:56.000
+Right.
+
+46:56.000 --> 46:59.000
+Okay, yeah.
+
+46:59.000 --> 47:05.000
+And it was that, that ratio, is that proportional to temperature? Is that what the Wheatman friends? Okay.
+
+47:05.000 --> 47:11.000
+Yeah, it's just a linear dependence.
+
+47:11.000 --> 47:13.000
+Right. I see.
+
+47:13.000 --> 47:20.000
+The main conclusion is, well, the electronic heat capacity shouldn't be that significant.
+
+47:20.000 --> 47:31.000
+Because if you look at, I think what they find is that thermal conductivity has some electronic heat capacity dependence, but empirically, that's not what's seen.
+
+47:31.000 --> 47:43.000
+And so the fact that it worked out is because there's this other factor that is also accounted for that gives you a cancellation of terms.
+
+47:43.000 --> 47:47.000
+Right. I see.
+
+47:47.000 --> 47:55.000
+Sure. Here's some music picked just for you. Sorry, my Siri went off. Oh, what happened there?
+
+47:55.000 --> 48:02.000
+Sorry about that. My Siri randomly went off. Oh, let's do it again.
+
+48:02.000 --> 48:10.000
+Yeah, anyway. Yeah, yeah. So, right, you get this cancellation and you get the factor of T coming out.
+
+48:10.000 --> 48:24.000
+Yeah, I thought that this section, like the, I found the derivation, like not like the most satisfying, like this thing based on equation 1.448, where they have like the electron coming from one side versus the electron coming from the other side.
+
+48:24.000 --> 48:30.000
+And there's this weird thing where the velocities are the same, even though temperatures are different kind of, but it turns out not to matter.
+
+48:30.000 --> 48:42.000
+But it was kind of a weird little derivation, I thought. But yeah, so I don't know if there's any more intuitive way to understand thermal conductivity. Yeah.
+
+48:42.000 --> 48:50.000
+Yeah, I agree. It was a little bit of hand waving. It was like an argument to make it look like, you know, the equation, but strange to me.
+
+48:50.000 --> 49:01.000
+Yeah. Yeah. Right. Okay. Well, yeah, I guess we can keep going. That was kind of, I don't know, not the best part of the book, I think.
+
+49:01.000 --> 49:08.000
+But yeah, we'll have to go back and look at this again. Let's see. I guess that's pretty much the end of the...
+
+49:08.000 --> 49:09.000
+I don't know.
+
+49:09.000 --> 49:16.000
+Oh, sorry. Yeah, I think that's pretty much the end of the chapter. See, was there anything else important here?
+
+49:17.000 --> 49:20.000
+I mean, yeah, that was basically...
+
+49:20.000 --> 49:25.000
+It was the thermal electric effect they mentioned, which is kind of cool. The Peltier effect.
+
+49:25.000 --> 49:29.000
+Oh, right. Yeah.
+
+49:29.000 --> 49:39.000
+Yeah, again, this is another thing because it's the prediction for the truth theory is just a constant. There's no dependence at all.
+
+49:39.000 --> 49:40.000
+Right.
+
+49:40.000 --> 49:49.000
+So that was one thing. I thought, you know, obviously you'd think the electron density or some other factor would matter, but it doesn't.
+
+49:49.000 --> 49:58.000
+Right. Yeah, yeah, it is interesting. Right. This Q is just, yeah, it's just a constant. Right. Or yeah, KB over...
+
+49:58.000 --> 50:05.000
+Or minus KB over 2E. Right. Yeah, a lot of cancellations there, I guess. That is interesting.
+
+50:13.000 --> 50:24.000
+Right. Oh, yeah, I guess another thing was how the electron contributions to the heat capacity was supposed to be really important in the Druda model,
+
+50:24.000 --> 50:31.000
+but I thought it was kind of interesting. I didn't really know that, but apparently basically a lot of the energy in heating up a metal,
+
+50:31.000 --> 50:42.000
+at least in the Druda model, was basically in increasing the electron velocities, basically, which is kind of interesting.
+
+50:43.000 --> 50:53.000
+Yeah, but I think in the following chapter, they mentioned that it's just not comparable to like 18 or anything like that.
+
+50:53.000 --> 50:56.000
+That's why it's not a significant factor, as I recall.
+
+50:56.000 --> 51:01.000
+Oh, okay. Okay. I see. So maybe it doesn't have to be that important.
+
+51:01.000 --> 51:08.000
+Yeah, because I think when they're talking about like, well, it's in the next chapter, they talk about like the Fermi energy level and like the spread there.
+
+51:08.000 --> 51:21.000
+That's when electrons will often be changing the matter, but not like there's no big factor that's changing them on the order of KB, if I recall correctly.
+
+51:21.000 --> 51:24.000
+I see. Right. Gotcha.
+
+51:24.000 --> 51:34.000
+Yeah, that actually reminds me of another thing that I guess we'll get to in the next chapter, but it's about how the pressure can basically be accounted for almost purely due to electrons.
+
+51:35.000 --> 51:45.000
+So in other words, if you look at the elastic modulus of the material of a metal, why is it hard to squeeze a metal and compress it in your hand?
+
+51:45.000 --> 52:00.000
+Well, it's not just the electrons. I think the nuclei also matter, but basically due to the Fermi direct statistics, if you just consider the electrons alone,
+
+52:00.000 --> 52:05.000
+they're basically enough to give you the same order of magnitude of like elastic modulus.
+
+52:05.000 --> 52:17.000
+So in other words, if you just had a free electron gas with no nuclei, but for some reason it was mutually charged, like there's some background of positive charge, it would still have this property.
+
+52:17.000 --> 52:22.000
+It would be really hard to compress just because of the electrons, which is kind of interesting thing to think about.
+
+52:22.000 --> 52:31.000
+Like the metal, you could think that it's just like having this, being hard to compress just because there's all these electrons there, which is kind of interesting.
+
+52:39.000 --> 52:45.000
+Yeah, I don't know. The only problem I did from this chapter was problem one. Did anyone take a look at any of the other problems here?
+
+52:52.000 --> 53:00.000
+Okay, I guess we can go on to chapter two. Oh, very cool. Well, making good progress. We made it through chapter one.
+
+53:03.000 --> 53:15.000
+Yeah, so anyone have any thoughts on chapter two? Just maybe just on kind of beginning, like the introduction of the Fermi direct statistics and stuff?
+
+53:23.000 --> 53:45.000
+I think the two really important parts are one, you know, we're going to replace this like classical gas thing by this other shape, figure 2.1, and the effective temperature is a lot higher there, or there's like a lot more energy because of, you know, we can't squeeze all these electrons together.
+
+53:45.000 --> 54:02.000
+But also, I think if we jump down to figure 2.3, I think this is like the really important thing to know about the Fermi direct function is that as you increase temperature, what happens is it goes from very sharp.
+
+54:02.000 --> 54:13.000
+So the very sharp is low temperature, and as you increase temperature, it kind of rounds out a little bit like that. And it's just that little tail sticking ahead that's like all your thermal electrons.
+
+54:13.000 --> 54:23.000
+And so just like qualitatively, that's like the main idea of this chapter is like, if we replace the distributions with this new kind of thing, what do we get?
+
+54:23.000 --> 54:35.000
+Right. Yeah, yeah. And actually also that like when, yeah, when you increase that temperature, as you said, it broadens that like that at very low temperature, you have this very abrupt step where you have electrons in these states.
+
+54:35.000 --> 54:42.000
+And then once you go above a certain energy, no electrons. And then, yeah, as you were saying, when you increase the temperature, that spreads out a little bit.
+
+54:42.000 --> 54:50.000
+But the interesting thing is that the chemical potential or where that step happens doesn't change or at least doesn't change appreciably. There might be some small change in it.
+
+54:50.000 --> 55:00.000
+But no, no, I don't think it does. So I think that the, or no, I think it might, yeah, might change, right? Because, yeah, like the Fermi level is the chemical potential at zero temperature or something.
+
+55:00.000 --> 55:09.000
+So it might, it changed a little bit with temperature, but it doesn't change significantly really. So in other words, a lot of things don't really change with when temperature changes.
+
+55:09.000 --> 55:21.000
+They don't like change or appreciably in the summer felled model, just because like, when, if you zoom way out, if you imagine that like this graph, this X axis extended very far out.
+
+55:21.000 --> 55:28.000
+And then you, you know, you kind of zoomed out the top and the bottom in figure 2.3 basically look the same.
+
+55:28.000 --> 55:38.000
+You know, when you zoom way out on that X axis. So I think, yeah, I think that's pretty interesting thing that basically there's no, there's not really much appreciable effective temperature on a lot of things.
+
+55:38.000 --> 55:57.000
+Because it all, all of these energies have to be filled anyway, just because of the Pauli exclusion principle.
+
+55:57.000 --> 56:04.000
+But yeah, there's also to do a little bit of a derivation of the Fermi Dirac distribution, which it's a little bit like kind of subtle.
+
+56:04.000 --> 56:17.000
+They do it by like deriving this weird like recursion relation for like considering the distribution when you have like one more electron and comparing that to the distribution when you have, you know, and electrons or something.
+
+56:18.000 --> 56:33.000
+So, we don't necessarily, I don't think, I think it's interesting proof, but it's not like I didn't get very much intuition from it, honestly. So it's maybe just better to keep in mind this picture of like, yeah, figure 2.3 or something.
+
+56:33.000 --> 56:38.000
+That was for your own right like they do it after the fact after they presented.
+
+56:38.000 --> 56:43.000
+Yeah, they do it like where they do it. It's like.
+
+56:44.000 --> 56:52.000
+Is that is that a standard like derivation or approach because I don't remember being explained to me like that.
+
+56:52.000 --> 57:01.000
+Yeah, I don't remember seeing it this way either like in my statistical physics class I think we did like somewhat different way in terms of yeah I part the partition function or something.
+
+57:01.000 --> 57:02.000
+Yeah.
+
+57:02.000 --> 57:05.000
+Yeah.
+
+57:05.000 --> 57:19.000
+But yeah, so I guess it's yeah, it's like around equations like 2.30 will starting at 2.38 where they just give 2.38 is raised the Boltzmann distribution.
+
+57:19.000 --> 57:23.000
+And right, I guess, yeah.
+
+57:23.000 --> 57:34.000
+Okay, this was this is an important like subtlety. This is important detail is that like one thing you could kind of be you could kind of come to believe is you might think like, oh, and I think that a lot of people kind of think of this way that like.
+
+57:35.000 --> 57:41.000
+The Fermi distribution is like a correction or Fermi direct distribution statistics are corrections of the Boltzmann distribution.
+
+57:41.000 --> 57:45.000
+In other words, like the Boltzmann distribution was wrong for electrons or for fermions.
+
+57:45.000 --> 57:48.000
+And so now we need to use Fermi direct statistics and it's kind of correct.
+
+57:48.000 --> 57:52.000
+But it's really that the Maxwell Boltzmann distribution was the thing that needs to be corrected.
+
+57:52.000 --> 57:54.000
+The Boltzmann distribution is still kind of correct.
+
+57:54.000 --> 57:59.000
+It's this that you just have to consider it on the space of all possible states.
+
+57:59.000 --> 58:06.000
+Right, you can't you can't allow these states that just don't exist where you have multiple electrons in the same exact energy level.
+
+58:06.000 --> 58:15.000
+But then when you apply like the Boltzmann distribution over the states that actually exist, you get the Fermi direct statistics.
+
+58:15.000 --> 58:20.000
+So it's more that like the Fermi direct statistics are kind of a special case of the Boltzmann distribution.
+
+58:20.000 --> 58:42.000
+And the Maxwell distribution, the Maxwell Boltzmann distribution would be like the classical version of that or something where you didn't have any poly exclusion principle, I think.
+
+58:43.000 --> 58:54.000
+So, yeah, this like 2.56 is an important equation too, because this Fermi function definitely comes up a lot and a lot of other things are basically weighted by this.
+
+58:54.000 --> 59:06.000
+But this is just the thing that that kind of step function, the thing that looks like the step down, but the spread of the step, you know, increases with temperature basically.
+
+59:06.000 --> 59:12.000
+Yeah.
+
+59:12.000 --> 59:22.000
+And this is, you know, you should it's also kind of machine learning you this is like a tanch or some other kind of function that goes from zero to one and is continuous.
+
+59:22.000 --> 59:25.000
+Right.
+
+59:25.000 --> 59:32.000
+Yeah, it's kind of interesting, right, because like these like sigmoidal functions are used a lot machine learning and it is kind of like a sigmoidal function.
+
+59:32.000 --> 59:43.000
+So, yeah, I wonder, you know, maybe some connection there.
+
+59:43.000 --> 59:58.000
+Speaking of the connection, I read this article a while back or posted to the group that sort of spoke about the difference between the attitude in statistics versus attitude with in machine learning that statistics is about beta hat
+
+59:58.000 --> 01:00:05.000
+estimation of parameters of a model and machine learning is about why had the prediction of the output.
+
+01:00:05.000 --> 01:00:15.000
+So I think we're going to, you know, I think we're going to see the move from sort of beta hat to, to why had in physics as well.
+
+01:00:15.000 --> 01:00:25.000
+And there are quite a few people who are sort of advocating for the fact that, you know, neural networks will be the discovers of the new equations.
+
+01:00:26.000 --> 01:00:34.000
+That's one name that comes to mind, you know, he spoke about how the next scientific theory might be hiding in the neural network.
+
+01:00:34.000 --> 01:00:41.000
+And what do you essentially do with a neural network, you know, you create neural networks to create a model of a system.
+
+01:00:41.000 --> 01:00:53.000
+And then you can sort of introduce a bottleneck in the middle and try to do symbolic regression on that bottleneck, some kind of encoder, and that can actually yield new equations.
+
+01:00:53.000 --> 01:01:02.000
+So the way we have done this in physics so far is that we sort of conceptualize these things imagine how they could work try to model them mathematically.
+
+01:01:02.000 --> 01:01:14.000
+And that's why you have these the same kind of building blocks, but neural networks allow you to do that through optimization in a somewhat more automated fashion.
+
+01:01:14.000 --> 01:01:28.000
+So I think that that similarity is highly non accidental. And we're going to see, you know, more of these coincidences with machine learning as we explore physics.
+
+01:01:28.000 --> 01:01:42.000
+Right. Yeah, no, I think that's a, yeah, it's a very cool idea of like that, you know, physics, like the neural networks, deep neural networks will become like an important kind of like functions and physics to model things and stuff like that.
+
+01:01:42.000 --> 01:01:57.000
+Like, yeah, I've been like one thing I've kind of been curious about is, I'm not sure if people research this but like learning like partition functions, for example, like is what once you understand how the partition function depends on like the parameters of a system, you can derive a lot of the
+
+01:01:57.000 --> 01:02:08.000
+thermodynamics from that like you can get the free energy by just taking the log of partition function stuff. So it'll be kind of interesting to see if people do like neural partition functions or something.
+
+01:02:08.000 --> 01:02:13.000
+And he has done that yet, but I'll definitely be curious about it.
+
+01:02:13.000 --> 01:02:28.000
+So I don't want to digress from the book too far but I think, you know, the paper that always comes to mind when this topic comes up is the your classifier is secretly an energy based model you should treat it as such and they kind of show how you can derive these
+
+01:02:28.000 --> 01:02:42.000
+unnormalized components, including sort of the the partition function from basically doing a classification problem, you sort of get that for free.
+
+01:02:42.000 --> 01:02:44.000
+Okay.
+
+01:02:44.000 --> 01:03:04.000
+Yeah, yeah, I'll have to read that. I actually haven't read that yet. But yeah. Yeah, I was seeing that. Yeah, I guess it's okay. We can we can chase this digression a little bit further because because I just remember this paper that I was looking at that where there was this tweet somebody sent about like how they were doing like neural molecular
+
+01:03:04.000 --> 01:03:15.000
+dynamics and like modeling the I guess like learning force fields you are like you're learning a potential energy function with like a neural network.
+
+01:03:15.000 --> 01:03:24.000
+And they're doing my molecular dynamics, and they saw like a phase transition, and they saw like a crystal form or something which wasn't like something that was expected within the model.
+
+01:03:24.000 --> 01:03:40.000
+So that's a pretty cool thing where you see like their body dynamics kind of coming out of neural networks without really putting it there in the first place, which was kind of fun.
+
+01:03:40.000 --> 01:03:56.000
+Yeah, so yeah, actually, another thing I wanted to point out, which was like really early on in this chapter two was on at the end of like page 30, it says, um, let's see, it says in most applications, Summerfell's model is nothing more than drew to this classical electron gas with the
+
+01:03:56.000 --> 01:04:02.000
+single modification that the electron velocity distribution is taking to be the quantum Fermi Dirac distribution.
+
+01:04:02.000 --> 01:04:11.000
+So like that seems to me to be saying like you can basically keep that same picture in mind of the Pachinko board or the Plinko board where you tip the board.
+
+01:04:11.000 --> 01:04:22.000
+You know that's analogous to applying a voltage and all of the balls on the board start to roll and then they bounce off the pins bouncing random direction and that creates this kind of drag effect.
+
+01:04:22.000 --> 01:04:30.000
+And the only thing that's different now is what happens when a ball hits a peg and now they're going to have different velocities.
+
+01:04:30.000 --> 01:04:41.000
+I guess they'll have like the distribution that you draw the velocity from after a collision is different because now it's like determined by this Fermi Dirac distribution instead of the Maxwell Boltzmann distribution.
+
+01:04:41.000 --> 01:04:49.000
+And if you just look at the curves and figure 2.1, I guess what you see is that the Fermi Dirac distribution extends much farther out, right?
+
+01:04:49.000 --> 01:04:58.000
+You have much higher energies. And so we can think of it as like when a ball hits a peg now, it's going to shoot off with like a much higher velocity on average.
+
+01:04:58.000 --> 01:05:03.000
+Whereas in the classical model, it would shoot off with a much lower velocity.
+
+01:05:03.000 --> 01:05:12.000
+So I think maybe that's one way to just kind of think about the Sommerfeld model modification is that it's like this Pachinko board picture still.
+
+01:05:12.000 --> 01:05:30.000
+But when a ball hits a peg, it bounces off with a with a much higher velocity, I guess.
+
+01:05:30.000 --> 01:05:33.000
+Yeah, so let's see. They talk a little bit about like the.
+
+01:05:33.000 --> 01:05:42.000
+You know, that's an interesting observation. So I just want to say something here about, you know, sort of Maxwell's attitude towards physics, right?
+
+01:05:42.000 --> 01:05:50.000
+He used to think about physics in terms of mechanical models because that was a thing that was very much invoke at the time.
+
+01:05:50.000 --> 01:05:57.000
+Like he would investigate color perception by making a color top and spinning it all day, all day long and doing some kind of experiments.
+
+01:05:57.000 --> 01:06:01.000
+So he tried to build this like mechanical sympathy with the system.
+
+01:06:01.000 --> 01:06:06.000
+And that's how he came up with his model for electromagnetism.
+
+01:06:06.000 --> 01:06:14.000
+And this is kind of similar here, right? Like we're going for the Drude model, which is very kind of mechanical in nature where it's something that's familiar with.
+
+01:06:14.000 --> 01:06:17.000
+We have like these billiard balls that they're bouncing off each other.
+
+01:06:17.000 --> 01:06:29.000
+And then the assumptions of the model are being kind of relaxed, allowing for the kind of interactions that are not actually easily observable in mechanical systems.
+
+01:06:29.000 --> 01:06:37.000
+Because they come from the system having effectively, I guess, fewer degrees of freedom.
+
+01:06:38.000 --> 01:06:54.000
+It's more constraints in the system created like the fact that the states that electrons find themselves in are not only dependent on what's happening to them and the immediate surroundings and what they interact with,
+
+01:06:54.000 --> 01:07:03.000
+but also the rest of the system, right? The potentials that exist within the system.
+
+01:07:04.000 --> 01:07:11.000
+I see. Or actually, so on the part you were saying about constraints, could you expand on that a little more?
+
+01:07:11.000 --> 01:07:19.000
+What you mean by having more or less constraints in particular with the model of the metal kind of?
+
+01:07:20.000 --> 01:07:25.000
+So your metaphor with the Galton board, right? Like this bouncing off.
+
+01:07:25.000 --> 01:07:37.000
+So you can always think about anything essentially as this kind of Galton board, I think, because that moment of hitting the peg, that's an interaction of some sort, right?
+
+01:07:37.000 --> 01:07:50.000
+And the question is what that interaction could be. And we started off with a metaphor for interaction between electrons and electrons that is effectively mechanical in nature.
+
+01:07:50.000 --> 01:07:57.000
+It's just as if there were billiard balls bouncing off each other, which is exactly the kinetic theory of gases.
+
+01:07:57.000 --> 01:08:06.000
+And then because these moments of interactions are actually dependent on more components of the system, right?
+
+01:08:06.000 --> 01:08:14.000
+Like, for instance, the presence of some other potentials that are there that will determine the magnitude of the result of the interaction,
+
+01:08:14.000 --> 01:08:18.000
+not just the charge of the electron, but, you know, and so on.
+
+01:08:19.000 --> 01:08:27.000
+That's kind of like a more, in a way, that's more constraints on the system. There's more things are specified.
+
+01:08:27.000 --> 01:08:32.000
+You have more things that go into the specification of what can happen in the interaction.
+
+01:08:32.000 --> 01:08:38.000
+But as a result, the interaction gets richer. There's more that can happen.
+
+01:08:38.000 --> 01:08:45.000
+Yeah, no, that's that's interesting, right? Because I guess like the way that, oh, sorry, my Siri keeps activating.
+
+01:08:45.000 --> 01:08:49.000
+But yeah, the way that like the, sorry, one second.
+
+01:08:49.000 --> 01:08:50.000
+I thought so.
+
+01:08:50.000 --> 01:08:52.000
+I remember not to say the S word.
+
+01:08:52.000 --> 01:08:54.000
+Yeah, I need to turn.
+
+01:08:57.000 --> 01:09:01.000
+It like, it starts my Apple music in a random way.
+
+01:09:01.000 --> 01:09:03.000
+I really learned to turn this thing off.
+
+01:09:03.000 --> 01:09:12.000
+All right, so the way that like we got to the Fermi Dirac statistics by was by exactly that, like adding a constraint, right?
+
+01:09:12.000 --> 01:09:21.000
+Saying now we're going to have the kind of the same like, well, we also kind of go to the quantum theory of having discrete states that electrons can be in.
+
+01:09:21.000 --> 01:09:27.000
+But then we add this constraint of saying you can't have two electrons with the same K vector in the same spin, right?
+
+01:09:27.000 --> 01:09:28.000
+Exactly.
+
+01:09:28.000 --> 01:09:33.000
+By adding that constraint, you actually get this much more like kind of rich behavior.
+
+01:09:33.000 --> 01:09:36.000
+And then, yeah, like as you were saying, we're going to add more potentials later.
+
+01:09:36.000 --> 01:09:47.000
+We'll add like the potential, you know, the kind of periodic potential of the sites in the lattice and that'll make it more rich, which is, I think, you know, could be seen as kind of a constraint in a way, I guess.
+
+01:09:47.000 --> 01:09:51.000
+So yeah, it's pretty interesting, right?
+
+01:09:51.000 --> 01:09:54.000
+Hi Patrick, how's it going?
+
+01:09:54.000 --> 01:09:57.000
+Hey, hey guys, now I'm listening in, it's a great discussion.
+
+01:09:57.000 --> 01:10:08.000
+I mean, it just makes me think of how historically, I mean, nowadays, young people are taught quantum mechanics, but in the old days, the old guys first learn classical mechanics, right?
+
+01:10:08.000 --> 01:10:16.000
+And then they had to sort of adjust their quantum, their classical intuition by gradually adding in more quantum things.
+
+01:10:16.000 --> 01:10:23.000
+And so it feels like these models are just kind of gradually adding in a little bit more quantum.
+
+01:10:23.000 --> 01:10:31.000
+Like they're starting off with this free electron gas model, right, which is just like, like you said, a billiard ball model.
+
+01:10:31.000 --> 01:10:36.000
+That's classical, right? And so then they add in this poly exclusion principle, right?
+
+01:10:36.000 --> 01:10:39.000
+And then the poly exclusion principle, that's quantum.
+
+01:10:39.000 --> 01:10:44.000
+So that's like, they're adding in a little bit of quantum there.
+
+01:10:44.000 --> 01:10:51.000
+But then, like, what's next? Like, what's the next quantum thing that they plan to add in to make the model more sophisticated?
+
+01:10:51.000 --> 01:11:02.000
+Right. So, I mean, I know, well, they can make it more sophisticated in various ways, but maybe just let me ask Max, Max, what is the next quantum thing that they plan to add in?
+
+01:11:02.000 --> 01:11:20.000
+Oh, right. Yeah, I think the next quantum thing is, yeah, so I guess they, you look at the potential energy of, right, because in the, in this like free electron gas, like the electrons are just moving in free space.
+
+01:11:20.000 --> 01:11:23.000
+And nothing happens until they actually collide with a nucleus.
+
+01:11:23.000 --> 01:11:29.000
+But in reality, they don't really collide with the nucleus, they're going to be moving like under a potential energy.
+
+01:11:29.000 --> 01:11:41.000
+And I think that that's like basically treated in a kind of quantum way using like, for example, like a tight binding model, where you can like have like a, you look at like, what's the wave function of electron if it were bound to an atom or something.
+
+01:11:41.000 --> 01:11:53.000
+And then you can kind of like take a linear combination of those orbitals, basically, and get like a wave function for an electron that is kind of non-local and across many atoms or something.
+
+01:11:53.000 --> 01:11:57.000
+I think that's the next quantum ingredients, yeah.
+
+01:11:57.000 --> 01:12:05.000
+Please. So you get atomic orbital theory and then you get molecular orbital theory and then you have, you know, your valence of chemistry.
+
+01:12:06.000 --> 01:12:13.000
+Right. I think in, yeah, I think in chemistry, they call this like the linear combination of atomic orbitals, like LCAO.
+
+01:12:13.000 --> 01:12:19.000
+And they call it like the tight binding model in physics more often, but it's basically the same thing, I think.
+
+01:12:19.000 --> 01:12:30.000
+Max, I think in relation to your, your board analogy, what they do is they solve the independent electron or Schrodinger equation for an electron.
+
+01:12:30.000 --> 01:12:40.000
+And then they have a wave function, they find the eigenstates or eigensolutions for the momentum operator, and then you get a velocity as a function of the wave number.
+
+01:12:40.000 --> 01:12:42.000
+So you get that kind of quantum effect.
+
+01:12:42.000 --> 01:12:52.000
+So, you know, you're adding that in, you're adding it in piece by piece, first, you know, pretty small, so there's nothing mentioned to the, you know, wave function or quantum state or anything like that.
+
+01:12:52.000 --> 01:12:53.000
+Right.
+
+01:12:53.000 --> 01:13:06.000
+Yeah, actually, I really like the idea, like, yeah, as Patrick was putting up, like, adding in a little bit of quantum, because, like, it's still, like, not fully quantum, like, because you can't have things like, you're definitely not going to have things like entanglement, right, in this, like,
+
+01:13:06.000 --> 01:13:11.000
+summerfell model, which are, like, when we think of, like, the spooky quantum stuff, like, there are things like entanglement.
+
+01:13:11.000 --> 01:13:15.000
+But the reason why is because you treat each electron as having its own wave function.
+
+01:13:15.000 --> 01:13:29.000
+You never write, like, the wave function over the product space of, like, you know, the wave function on the space of, like, where is every, you know, when you specify the wave function, the argument of the wave function is the location of a single electron,
+
+01:13:29.000 --> 01:13:31.000
+not the location of every electron.
+
+01:13:31.000 --> 01:13:33.000
+So that's, like, the sense in which they're independent.
+
+01:13:33.000 --> 01:13:45.000
+But, yeah, I think you can really just think of it as, like, saying that the velocity of an electron now has to be an integer multiplied by, like, some constant, basically.
+
+01:13:45.000 --> 01:13:53.000
+And so you can think of it in maybe this, like, semi-classical way, where you still have electrons at discrete points moving in specific directions.
+
+01:13:53.000 --> 01:13:59.000
+And now the directions, the velocities they're moving with is kind of constrained, right?
+
+01:13:59.000 --> 01:14:06.000
+We've had this constraint that, like, the velocity is on this kind of cubic lattice, basically, I think.
+
+01:14:06.000 --> 01:14:14.000
+So, you know, this makes me think that, like, we started off with, you know, this idealized model where there is actually a space in which you can move.
+
+01:14:14.000 --> 01:14:20.000
+As you add the quantum things, you realize that there isn't such a thing as this continuous space.
+
+01:14:20.000 --> 01:14:23.000
+There is only a bunch of places where things can be.
+
+01:14:23.000 --> 01:14:37.000
+But yet we're still holding onto this notion of velocity that sort of is used to describe how objects would move through this, you know, Cartesian state for action, through empty space, right?
+
+01:14:37.000 --> 01:14:47.000
+But so you still kind of measure that, but, like, at this point, there's a bit of a change, like, you know, the electron can be in this position or that position.
+
+01:14:47.000 --> 01:14:51.000
+And it's not like it's actually traversing the space between.
+
+01:14:51.000 --> 01:15:01.000
+It's more like there is a causal edge between those two locations, and it can sort of instantaneously be here or there.
+
+01:15:01.000 --> 01:15:09.000
+But we still, from our perspective, we still measure this notion of velocity because it's something that we find familiar.
+
+01:15:09.000 --> 01:15:27.000
+Right. Yeah, yeah, I think that's a good point, because, like, if we look at, like, the way they derive, like, the, you know, the properties of metal in the Summary Feld model, like, starting with, like, say, around, like, equation 2.5, where they're, like, looking at starting to describe the wave function,
+
+01:15:27.000 --> 01:15:35.000
+they're basically using, like, kind of a particle in a box, I guess, like a periodic box, like an electron in a box with periodic boundary conditions.
+
+01:15:35.000 --> 01:15:41.000
+And the, like, eigenstates basically are, like, plane waves, right?
+
+01:15:41.000 --> 01:15:45.000
+So when you have a plane wave, it's not, it's completely de-localized.
+
+01:15:45.000 --> 01:15:50.000
+It has no position, but it has a completely well-defined momentum.
+
+01:15:50.000 --> 01:15:52.000
+It has, like, exactly a determined momentum.
+
+01:15:52.000 --> 01:16:02.000
+And so this is, like, these are the states that they're defining the, that they're using for the Summary Feld model are, like, these states of an electron where the electron is everywhere in the box.
+
+01:16:02.000 --> 01:16:09.000
+A single electron is really everywhere in the metal all at the same time, but it has a very well-defined velocity, which is a weird thing to think about.
+
+01:16:09.000 --> 01:16:12.000
+But that's, that's the way it is, I guess.
+
+01:16:12.000 --> 01:16:21.000
+And so then we kind of make a compromise, though, between this new, like, quantum view and the totally classical view, where, like, from this thinking of it as an electron in the box,
+
+01:16:21.000 --> 01:16:29.000
+we've taken, what we've taken from that is we've said the velocities have to be discretized because, because of these boundary conditions, you can't have any velocity.
+
+01:16:29.000 --> 01:16:44.000
+It has to have a certain, you know, momentum such that it's, it's a k vector or such that it's periodic with, like, this, you know, the right period that it's, you know, the period is compatible with the periodic boundary conditions.
+
+01:16:44.000 --> 01:16:48.000
+That does, it does, it goes back and overlaps with itself.
+
+01:16:48.000 --> 01:16:53.000
+But then we say, say, take that constraint on the velocities and just kind of plug it into the Druda model.
+
+01:16:53.000 --> 01:17:00.000
+And then we go back to pretending that the electrons actually are at specific positions and bouncing around, like, balls on the Pachinko board again.
+
+01:17:00.000 --> 01:17:02.000
+So I think, yeah, it's kind of interesting.
+
+01:17:02.000 --> 01:17:11.000
+And it's, it's like, you know, not like realistic, but it's something at least, I mean, I definitely, I like the Druda model because it's intuitive to think about.
+
+01:17:11.000 --> 01:17:17.000
+So it's, it's kind of nice that you can still use it and like plug in these constraints somehow.
+
+01:17:17.000 --> 01:17:22.000
+I have a question because it was mentioned kind of like how we, how we're taught.
+
+01:17:22.000 --> 01:17:31.000
+You start from this kind of very classical and slowly add these quantum effects and but is it from a pedagogical perspective, does this make sense nowadays to teach like this?
+
+01:17:31.000 --> 01:17:42.000
+Or would it make sense to start from a more basic fundamental principle like quantum theory and build up the notion of what it means to have a velocity?
+
+01:17:42.000 --> 01:17:44.000
+Yeah, it's a good question.
+
+01:17:44.000 --> 01:17:56.000
+I mean, if nowadays increasingly students have more and more intuition about quantum mechanics, the idea is that the more quantum you're exposed to the more intuition you get.
+
+01:17:56.000 --> 01:17:59.000
+And so Feynman was a big advocate for this.
+
+01:17:59.000 --> 01:18:07.000
+He said that like, well, eventually in the future people would just have quantum intuition and then you can just speak to that intuition.
+
+01:18:07.000 --> 01:18:17.000
+And, you know, I was trying to, you know, in the chat, like, think from a quantum perspective when it comes to something like conduction, right?
+
+01:18:17.000 --> 01:18:28.000
+Like, if you, if you want to, if you want to think about conduction from a quantum perspective, then you have to think about transitions between discrete energy levels, right?
+
+01:18:28.000 --> 01:18:32.000
+Because, of course, quantum has discrete energy levels.
+
+01:18:32.000 --> 01:18:35.000
+And then you have to think about basically like photon absorption.
+
+01:18:35.000 --> 01:18:43.000
+So like some sort of potential or time dependent potential is causing a transition between energy levels.
+
+01:18:43.000 --> 01:18:49.000
+And that takes you from like, you know, one k vector to a different k vector, right?
+
+01:18:49.000 --> 01:18:53.000
+Or one eigenstate to a different eigenstate.
+
+01:18:54.000 --> 01:19:07.000
+And so I guess what I'm trying to say is I think there is a way to kind of talk about the usual classical stuff that we usually talk about, like conduction, for example.
+
+01:19:07.000 --> 01:19:14.000
+But have this kind of quantum picture in the back of your head, if you also know the quantum mechanics too.
+
+01:19:14.000 --> 01:19:18.000
+And so, so you, yeah, you can try to go back and forth.
+
+01:19:18.000 --> 01:19:29.000
+Like, on the one hand, you're thinking about, because many people have seen, you know, like the undergraduate quantum mechanics about how photon absorption happens with the Schrodinger equation.
+
+01:19:29.000 --> 01:19:41.000
+And so, so then you can sort of have those examples in the back of your head and then you can say, okay, I can sort of see how the classical process of conduction kind of pops out or something.
+
+01:19:41.000 --> 01:19:50.000
+But I guess the idea is that if you know the quantum mechanics, then you just get like a deeper understanding of some of the usual classical phenomena that we're used to seeing.
+
+01:19:50.000 --> 01:19:52.000
+Right.
+
+01:19:52.000 --> 01:19:57.000
+So, so that quantum mechanics kind of adds depth to your understanding, I think there.
+
+01:19:57.000 --> 01:20:02.000
+I don't know what you anyone other other thoughts there.
+
+01:20:02.000 --> 01:20:18.000
+Yeah, I mean, I agree with that. I was also going to say that like, yeah, in terms of like the way the curriculum generally goes, like, I think it's right to start with the classical because like think like in kinematics, for example, like, you know, there's like some depth to be
+
+01:20:18.000 --> 01:20:31.000
+gained and like understanding, you know, understanding how objects move and stuff from quantum mechanics, but most of what we have, you know, observe and like every day, you know, kinematics and stuff is like totally well explained by the classical and is like very intuitive in the classical.
+
+01:20:31.000 --> 01:20:39.000
+So I think like that, yeah, that'll be, it'll probably be too hard for a lot of people to like just start with like a purely quantum and then go to the classical.
+
+01:20:39.000 --> 01:20:56.000
+But so yeah, like the idea of I guess Patrick was putting it is like kind of starting with a classical understanding, then like adding depth by figuring out like how quantum mechanics can like shift things and and change things basically but yeah.
+
+01:20:57.000 --> 01:21:05.000
+But at the same time the classical intuition like you said works really, really well for some of these processes that you want to understand.
+
+01:21:05.000 --> 01:21:13.000
+Like, you know, if you just think of, yeah, like conduction right the temperature dependence of conduction.
+
+01:21:13.000 --> 01:21:18.000
+It's really easy to just see in your head with classically.
+
+01:21:18.000 --> 01:21:31.000
+So, so then yeah, it's, it's only when you get to like some weird exotic effects like, you know, the hall effect or quantum or quantum hall effect or condo effects or other kinds of exotic effects.
+
+01:21:31.000 --> 01:21:39.000
+Then you start to have to worry about the quantum things but yeah, it's interesting that the classical model does work quite well, especially for metals.
+
+01:21:39.000 --> 01:21:44.000
+Right, like that gas picture for metals works really well somehow.
+
+01:21:44.000 --> 01:21:45.000
+Right.
+
+01:21:45.000 --> 01:21:46.000
+Yeah, yeah.
+
+01:21:46.000 --> 01:21:50.000
+The thing that's really interesting about that too is like, like people probably could have had.
+
+01:21:50.000 --> 01:22:03.000
+Well, I don't remember exactly what year like, you know, drew to like, you know, first published his model by people probably could have understood metals like very well, like long before that probably just using this kind of simple classical model right.
+
+01:22:03.000 --> 01:22:13.000
+I mean, maybe even, you know, they didn't have the technology to measure, you know, currents and, you know, resistivities and stuff, but they could have like, you know, come up with a model like that.
+
+01:22:13.000 --> 01:22:26.000
+Well, you could say that quantum theory was basically already there when we got the statistical mechanics and the Boltzmann constant right that was already quantization.
+
+01:22:26.000 --> 01:22:32.000
+It's just, people didn't quite understand the consequences of that yet.
+
+01:22:32.000 --> 01:22:33.000
+Right.
+
+01:22:33.000 --> 01:22:51.000
+So yeah, these things, these things take a long time to seep into the mind to really compute the full consequences of these moves, because they're these moves are usually made to solve an immediate problem, something that they really want at the time, you know, you always talk about how people
+
+01:22:51.000 --> 01:23:04.000
+when statistical mechanics was invented, the main problem was building a better steam engine. So that was in everybody's mind. And this this quantization of nature just slipped in.
+
+01:23:04.000 --> 01:23:17.000
+And it took quite a while for it to to become visible with experiments were that was specifically something that was related specifically to something that people were trying to do to achieve with those experiments.
+
+01:23:17.000 --> 01:23:18.000
+Right.
+
+01:23:18.000 --> 01:23:31.000
+Yeah, yeah. And actually, yes, I was just looking it up. And so the Drudov model was proposed in 1900, right. But it's basically its assumptions are really just like Newtonian, like Newtonian mechanics kind of, I mean, I guess you need the electric field, right.
+
+01:23:31.000 --> 01:23:40.000
+Like you need the Lorenz force to like, figure out how the electrons are going to accelerate. But it, you know, and that was, of course, like, you know, published back in like the late 1600s.
+
+01:23:40.000 --> 01:23:50.000
+So it is kind of interesting that like, maybe people could have had like a pretty good theory of metals, like, you know, even in like the 18th century, I guess, or something.
+
+01:23:50.000 --> 01:23:52.000
+Yeah, if they had figured that out.
+
+01:23:52.000 --> 01:23:57.000
+I mean, the point I'm trying to make is that if they could have, they would have.
+
+01:23:57.000 --> 01:23:58.000
+Okay, yeah.
+
+01:23:58.000 --> 01:24:11.000
+Right. My guess is they would have quickly realized it only worked for metals because there's a lot of other insulators, semiconductor materials that would have clearly shown that this Drud model or even the summer field model probably would have failed terribly.
+
+01:24:11.000 --> 01:24:13.000
+Terribly so.
+
+01:24:13.000 --> 01:24:15.000
+I see. Yeah.
+
+01:24:15.000 --> 01:24:29.000
+So you'd find a match as well. And like we saw with some of those, you know, empirical laws like that, we'd been friends. It was friends. It was, it worked well because of the cancellation of terms.
+
+01:24:29.000 --> 01:24:33.000
+But for other materials, I assume it would have failed terribly.
+
+01:24:33.000 --> 01:24:35.000
+Right.
+
+01:24:35.000 --> 01:24:47.000
+Well, Max, Maxwell's equations and Maxwell Boltzmann distribution have Maxwell in the name and they both came in like the 1860s or 70s. And so I think it would be hard to get it with the Druda model before that.
+
+01:24:47.000 --> 01:24:59.000
+Right. Yeah, yeah, I think you're right. Like without without at least like knowing the Lorenz force, which was also, you know, later definitely then Newton's laws.
+
+01:24:59.000 --> 01:25:12.000
+I mean, yeah, they wouldn't have had any way of, you know, knowing like what what is the force that's actually pushing off the the particles in a metal or something. Right.
+
+01:25:12.000 --> 01:25:14.000
+Yeah.
+
+01:25:15.000 --> 01:25:32.000
+All right. Well, yeah, maybe I don't know, maybe we can just like see if there's anything else in like chapter two that will be good to go over. So we talked about like the Fermi Dirac distribution and the the fact that like the states are discretized because of like the kind of particle in a box picture.
+
+01:25:32.000 --> 01:25:41.000
+And then they kind of go through, they basically repeat a lot of the derivations from the chapter one, but now just like making modifications using the Fermi Dirac statistics.
+
+01:25:41.000 --> 01:25:57.000
+So I don't think it's it's not like super important for us to go through all that really just to basically know that a lot of the changes I think are because things that would depend a lot on temperature in with like Maxwell Boltzmann statistics.
+
+01:25:57.000 --> 01:26:06.000
+Often, I don't really depend on temperature in the Fermi Dirac statistics because of this thing where it looks like a very flat line and then abruptly drops off.
+
+01:26:06.000 --> 01:26:26.000
+And the only thing that really changes with temperature is that the width of the drop off changes in that. And so they have like these approximations where you basically, for example, a crude approximation that's made is like taking that logistic curve and like treating it as almost as if it were just a straight line and then a linear segment of it.
+
+01:26:26.000 --> 01:26:35.000
+Where the drop off happens and then you can kind of figure out like what's the area? How much does the like area under the curve change when you use that linear approximation?
+
+01:26:35.000 --> 01:26:45.000
+And that's like pretty decent sometimes, I think, and you can get like a crude estimate of temperature dependence based on that. But like, yeah, not too much changes, I think, basically.
+
+01:26:45.000 --> 01:26:54.000
+So yeah, I think we're basically covered the chapter two pretty well, I guess. I don't know. Yeah, anyone else have any thoughts on the chapter two and the Sommerfeld model?
+
+01:26:55.000 --> 01:27:00.000
+I mean, I think the outcome was like the Fermi velocity and the Fermi surface.
+
+01:27:00.000 --> 01:27:02.000
+Oh, right.
+
+01:27:02.000 --> 01:27:11.000
+These are pretty important factors of basically why things different in the Sommerfeld model versus through the model.
+
+01:27:11.000 --> 01:27:15.000
+Yeah, you're totally right. Yeah, this is important. Yeah.
+
+01:27:15.000 --> 01:27:17.000
+Right.
+
+01:27:17.000 --> 01:27:25.000
+Yeah, and the idea like the density of states and stuff. Yeah, I guess that is kind of important. Right. Where is that in the, I can't remember.
+
+01:27:25.000 --> 01:27:36.000
+Right. I think they define like a Fermi temperature, which then they relate back to like the classical ideal gas model and discuss.
+
+01:27:36.000 --> 01:27:45.000
+I got to look into exactly what it was. But that's how they get like you mentioned the pressure and how the pressure of a free electron model like actually does fairly well to
+
+01:27:45.000 --> 01:27:51.000
+estimate the like compressibility or bulk modulus. Right. So that's where it all comes from.
+
+01:27:51.000 --> 01:28:02.000
+Right. Oh, yeah, yeah. Just like on page like 36 basically, well, like 35, starting on page 35, I think is where they do that. Yeah, that's a good point.
+
+01:28:02.000 --> 01:28:17.000
+So actually there's nice figure figure 2.2. There's you see this kind of grid of points in those are the velocities or the Kate really the cave actors but you can kind of think of those like the velocities that an electron is allowed to have.
+
+01:28:17.000 --> 01:28:26.000
+And so then if you imagine like drawing a circle superimposed over this grid, and then you could count like how many dots are in that circle. Right.
+
+01:28:26.000 --> 01:28:33.000
+The larger the circle becomes the more dots are on the edge or like near the edge of that circle. Right.
+
+01:28:33.000 --> 01:28:43.000
+And you can basically estimate like the number of dots that are in the circle by just like the area of the circle divided by the density of dots basically.
+
+01:28:44.000 --> 01:28:53.000
+Yeah, the area of the circle divided by the area of the circle multiplied by the density of dots and that density of the dots is like the density of states.
+
+01:28:53.000 --> 01:29:02.000
+But then if you're really the way to use is that a circle of like a certain radius, like the edge of that circle is like determines a certain energy.
+
+01:29:02.000 --> 01:29:08.000
+And then if you increase the energy by a little bit, you make the circle bigger, you overlap more dots. Right.
+
+01:29:08.000 --> 01:29:14.000
+So I go from a circle of radius R to a circle of radius R plus DR and now I've added a certain number of dots.
+
+01:29:14.000 --> 01:29:26.000
+And how many dots do I add? Well, that really is like the way that people use the density of states a lot is like the way then the number of states that you add when you change the energy at a given energy basically.
+
+01:29:26.000 --> 01:29:32.000
+And that's really what determines like the distribution of the energies that electrons will actually have in the metal.
+
+01:29:32.000 --> 01:29:36.000
+You take that density of states and kind of multiply it by the Fermi distribution.
+
+01:29:36.000 --> 01:29:41.000
+So that was actually an important kind of thing we were talking about in the chat this week, I think.
+
+01:29:41.000 --> 01:29:43.000
+But if I think I got that right, but yeah.
+
+01:29:50.000 --> 01:30:00.000
+But yeah, I remember you had Patrick, you also had some good comments on this like thing about the density of states and the distribution of the energy of electrons and stuff.
+
+01:30:00.000 --> 01:30:04.000
+But do you have anything to add on that kind of?
+
+01:30:04.000 --> 01:30:06.000
+No, not really.
+
+01:30:06.000 --> 01:30:22.000
+I mean, I mean, okay, so full disclosure is that I'm not actually reading the chapters because and just because I'm pretty busy, but also because I think I read this book in grad school.
+
+01:30:22.000 --> 01:30:26.000
+But it's so I don't know exactly what this chapter is about.
+
+01:30:27.000 --> 01:30:30.000
+But what's the title of this chapter?
+
+01:30:30.000 --> 01:30:34.000
+This is the Sommerfeld model or the Sommerfeld theory of metals.
+
+01:30:34.000 --> 01:30:35.000
+Okay, okay.
+
+01:30:35.000 --> 01:30:37.000
+Gotcha.
+
+01:30:37.000 --> 01:30:38.000
+Yeah.
+
+01:30:38.000 --> 01:30:45.000
+All right, so this is the whole thing that you said, like taking the free electron glass and then adding in this Fermi Dirac distribution.
+
+01:30:45.000 --> 01:30:48.000
+Yeah, yeah, that makes sense.
+
+01:30:48.000 --> 01:30:53.000
+So, no, I mean, don't really have much to add.
+
+01:30:54.000 --> 01:31:01.000
+So my understanding is the reason you wanted to go over this book is because ultimately you're interested in probably semiconductors, right?
+
+01:31:01.000 --> 01:31:07.000
+Yeah, yeah, because ultimately you're interested in designing chips on silicon, etc.
+
+01:31:07.000 --> 01:31:14.000
+Yeah, so it's going to be really interesting once we get to things that are especially related to silicon and semiconductors.
+
+01:31:15.000 --> 01:31:19.000
+Because then the band structures become much more rich, right?
+
+01:31:19.000 --> 01:31:23.000
+Like silicon has like this indirect band gap.
+
+01:31:23.000 --> 01:31:28.000
+And like really a lot of quantum like semiconductors have tons of quantum effects.
+
+01:31:28.000 --> 01:31:39.000
+So, you know, obviously the band gap, but then you have all these exotic states like you have excitons, you have, of course, the dopants like the, you know, P and N type.
+
+01:31:39.000 --> 01:31:43.000
+And, you know, a lot of these are really thought of as like discrete energy levels.
+
+01:31:43.000 --> 01:31:50.000
+So I think it's going to the quantum stuff is going to be much more important for the semiconductors when we get into that.
+
+01:31:50.000 --> 01:31:58.000
+But yeah, I did my PhD in semiconductor physics, even though I switched fields many times.
+
+01:31:58.000 --> 01:32:03.000
+So I'm excited to see how when we get to the semiconductor stuff.
+
+01:32:03.000 --> 01:32:05.000
+Anyway, yeah.
+
+01:32:05.000 --> 01:32:08.000
+Cool, but that's all I have.
+
+01:32:08.000 --> 01:32:19.000
+So, yeah, if you look through the this summer, summer field expansion, that that's if I didn't understand what the, what the importance of it was.
+
+01:32:19.000 --> 01:32:27.000
+Yeah, so I think that's basically like that's asking the question like how does how do things change when you increase the temperature in the summer field model, right?
+
+01:32:27.000 --> 01:32:32.000
+Because when you look at, yeah, when you look at figure 2.1.
+
+01:32:32.000 --> 01:32:37.000
+Well, where is the figure where they had the one with the temperature changing?
+
+01:32:37.000 --> 01:32:38.000
+I don't remember.
+
+01:32:38.000 --> 01:32:39.000
+Oh, yeah.
+
+01:32:39.000 --> 01:32:40.000
+Yeah.
+
+01:32:40.000 --> 01:32:41.000
+Right.
+
+01:32:41.000 --> 01:32:44.000
+Yeah, especially I think yeah 2.3 is a nice illustration of it.
+
+01:32:44.000 --> 01:32:52.000
+If you look at figure 2.3, that change when we increase the temperature really doesn't seem to change too much just makes this step fall off a little bit slower.
+
+01:32:52.000 --> 01:32:54.000
+It makes it a little bit of a smoother transition.
+
+01:32:54.000 --> 01:32:58.000
+And so when you want to know like how do properties change when you increase the temperature?
+
+01:32:58.000 --> 01:33:01.000
+Like does, you know, how does the connectivity depend on temperature?
+
+01:33:01.000 --> 01:33:08.000
+Like both the thermal and the electrical connectivity or how does the does heat capacity depend on temperature or something like that?
+
+01:33:08.000 --> 01:33:13.000
+You're really just talking about like this drop off becoming a little bit smoother.
+
+01:33:13.000 --> 01:33:18.000
+And this function is actually like not the nicest thing to describe mathematically like this.
+
+01:33:18.000 --> 01:33:22.000
+I mean, when you want to do all this math and figure out like how the connectivity has changed.
+
+01:33:22.000 --> 01:33:32.000
+And so one one way you could approximate this is instead of having like the sigmoidal curve, you could have it instead of a sigmoidal curve or a step function.
+
+01:33:32.000 --> 01:33:37.000
+You have kind of a compromise where you have it flat and then changes to linear at some point.
+
+01:33:37.000 --> 01:33:44.000
+And so you have like a linear drop off that has the kind of the same width as the sigmoidal part.
+
+01:33:44.000 --> 01:33:53.000
+Or you could go kind of an order higher in a Taylor expansion and use like a quadratic function or a piecewise quadratic approximation to approximate this drop off.
+
+01:33:53.000 --> 01:34:05.000
+And I think this is basically the summer felt expansion is like using higher orders in the Taylor series to kind of approximate the drop off and seeing how that gives you a better estimate of the properties of the material basically.
+
+01:34:05.000 --> 01:34:10.000
+Yeah, I could see it like it's a simple Taylor expansion, but I didn't know what made it so unique about being a summer.
+
+01:34:11.000 --> 01:34:22.000
+Right. Yeah, yeah, so it's really I think about this this thing of like of like modeling this drop off that occurs in like the Fermi drag statistics, I guess.
+
+01:34:22.000 --> 01:34:23.000
+Yeah.
+
+01:34:23.000 --> 01:34:26.000
+Right.
+
+01:34:26.000 --> 01:34:33.000
+But yeah, yeah, I was also going to say, yeah, and yeah, and Patrick was kind of talking about how like this will be important to understand like semiconductors more.
+
+01:34:33.000 --> 01:34:43.000
+And yeah, absolutely. Definitely like one of the major reasons I'm interested in the book. And also, I think like there's like other like a lot of like exotic materials that are used in kind of new like computing approaches and like making
+
+01:34:43.000 --> 01:34:47.000
+Memoristers and stuff and things like phase phase change memory and stuff like that.
+
+01:34:47.000 --> 01:35:00.000
+And I am, you know, kind of one thing I'm kind of curious about is like, maybe there's some approach to modeling like the thermodynamics of materials like this and especially understanding like the noise properties of them.
+
+01:35:00.000 --> 01:35:15.000
+It's like informed by solid state physics, you know, maybe even using like machine learning like informed by solid state physics to like come up with good models of thermodynamics and noise for like exotic materials that are using these new like analog computing approaches and stuff.
+
+01:35:15.000 --> 01:35:23.000
+But yeah, definitely don't know enough about it now, but that's kind of something I'm just curious and we keep in mind as we go through.
+
+01:35:30.000 --> 01:35:43.000
+Yeah, so I guess we went through the first two chapters. I think that was a good thing to a good goal for today is just like discussing those first two chapters really like chapter three talks about the failures of the free electron model.
+
+01:35:43.000 --> 01:35:51.000
+It's pretty short. But yeah, just kind of list a bunch of things that it doesn't you don't get right with the free electron model.
+
+01:35:51.000 --> 01:35:59.000
+But yeah, I think this is pretty good. But yeah, I guess we could kind of have a more like, you know, open like discussion.
+
+01:35:59.000 --> 01:36:03.000
+If anybody have any random thoughts about the reading or anything like that.
+
+01:36:03.000 --> 01:36:13.000
+So your goal like after kind of doing the semi or the fall state physics to move on to device physics to like actually look at what goes on in different devices.
+
+01:36:14.000 --> 01:36:27.000
+Right. Yeah, so the next like the next book I was planning to read was actually like the art of electronics. So yeah, going from this to like, I guess, what kind of like how you actually engineer circuits using devices.
+
+01:36:27.000 --> 01:36:41.000
+But yeah, maybe like kind of in between it'll be good to read up on like the physics of like CMOS devices and transistors a little bit, which would be would have a good basis for understanding it from this book.
+
+01:36:41.000 --> 01:36:50.000
+Because I know like with like a lot of devices, they use like a Boltzmann transport type equations for modeling and stuff like that.
+
+01:36:50.000 --> 01:37:03.000
+Oh, gotcha. And I kind of like drift diffusion equations and stuff like that. Right. Yeah. Right. Yeah, it makes sense. And those are like, yeah, basically like an instrument equations which are kind of the if you've read some of our papers at normal like the
+
+01:37:03.000 --> 01:37:12.000
+form wisdom we use for describing a lot of our are like thermo computing devices. So that'll be fun. Yeah.
+
+01:37:16.000 --> 01:37:19.000
+Right.
+
+01:37:19.000 --> 01:37:26.000
+Yeah, I don't know any other like thoughts on the reading or anything. Any points people want to bring up.
+
+01:37:27.000 --> 01:37:44.000
+All right. Yeah, I guess I guess not. Okay. Yeah, I think this was this was good. I think we we covered a lot. So thanks everyone. I guess all in the space now and maybe hang out in some other spaces or something.
+
+01:37:44.000 --> 01:37:53.000
+But yeah, thanks everyone for coming and for keeping up with the reading. So I guess we'll see you again next week.
+
+01:37:53.000 --> 01:37:56.000
+See you guys. Thanks everybody. Thanks.
+

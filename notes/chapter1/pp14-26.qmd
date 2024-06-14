@@ -1,0 +1,64 @@
+---
+title: "Drude Theory (pp. 14-26)"
+author: 
+  - name: "Xirtam Esrevni"
+    email: "Xirtam.Esrevni@protonmail.com"
+    affiliation: 
+      - name: "Hilbert Space"
+  - name: "Book Club Cohort"
+    affiliation: "X Space"
+keywords:
+  - Independent Electron
+  - Drude Theory
+  - AC Conductivity
+  - Thermal conductivity
+license: "CC BY"
+---
+
+## AC Electrical Conductivity
+
+When a time varying electric field is present, $\mathbf{E}(t) = Re\left(\mathbf{E}(\omega)e^{-i\omega t}\right)$, the frequency dependent electrical conductivity is:
+
+$$ \sigma(\omega) = \frac{\sigma_o}{1-i\omega t}$$
+
+with $\sigma_o$ being the DC Drude conductivity. If we look to solutions for to Maxwell's equations given a specified current density $\mathbf{j}$, the resulting wave equation has dielectric constant of the form:
+
+$$\mathbf{\epsilon}(\omega) = 1 + \frac{4\pi i \sigma}{\omega}$$.
+
+Assuming $\omega \tau \gg 1$ and thus $1-i\omega\tau \approx -i\omega \tau$, then:
+
+$$\mathbf{\epsilon}(\omega) = 1 - \frac{3\pi n e^2}{m \omega^2} = 1 - \frac{\omega_p^2}{\omega^2}$$ {#eq-1-37}
+
+where $\omega_p^2$ is called the plasma frequency and dictates wheter EM radiation can propagate through the electron gas. Another outcome from @eq-1-37, is charge density oscillations that have oscillatory time depencence $e^{-i\omega t}$.
+
+## Thermal Conductivity of a Metal
+
+A one-dimensonal thermal current will be given by $j^q = -\kappa \frac{dT}{dx}$. Simplifying this to view the thermal energy per electron before and after a collision, would be $\mathcal{E}(T[x\prime])$ and $\mathcal{E}(T[x])$, respectively. Consider that two thermal resivoirs, a hot and cold, then we can write:
+
+$$ j^q = \frac{1}{2} n\, v\left( \mathcal{E}(T[x-v\tau]) - \mathcal{E}(T[x+v\tau])\right) $$
+
+the first term in parenthesis is the hot and the second the cold. The prefactor is the number of electrons and their velocity. Expanding about the point $x$ gives:
+
+$$j^q = nv^2\tau \frac{d\mathcal{E}}{dT}\left(-\frac{dT}{dx}\right)$$
+
+In 3D, assumping isotropic velocity distribution, $\langle \mathbf{v} \rangle = \frac{1}{3}v^2$, and from thermodynamics $n\frac{\mathcal{E}}{dT}=C_v$. Then the thermal current is given as:
+
+$$\mathbf{j}^q = -\frac{1}{3}v^2\tau C_v \nabla T$$
+
+and defining thermal conductivity as:
+
+$$ \frac{1}{3} v^2 \tau C_v $$
+
+One of the success of this analysis is the Wiedemann-Franz law, which assumes both the electronic specific heat, $C_v$, and the electronic velocity $v$ are described through classical ideal gas laws and thus leads to:
+
+$$\frac{\kappa}{\sigma} = \frac{3}{2} \left(\frac{k_B}{e}\right)^2 T\,,$$
+
+Which surprisingly agreed with experiments, because the electronic contributions to specific heat is no where near $\frac{3}{2} n k_B$. It turned out that the agreement was pure luck in canceling of two errors in the Drude theory approximation that cancel each other out. 
+
+## Thermopower
+
+Similar to thermal conductivity, using the Drude theory to analyze thermopower in thermoelectrics, it is found to be constant:
+
+$$ Q = -\frac{k_B}{2e} $$
+
+

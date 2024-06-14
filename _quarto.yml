@@ -1,0 +1,63 @@
+lang: en
+editor: visual
+project:
+  type: website
+  output-dir: docs
+
+
+website:
+  image: https://en.wikipedia.org/wiki/File:Ashcroft_and_Mermin_cover.jpg#/media/File:Ashcroft_and_Mermin_cover.jpg
+  sidebar:
+    title: "Ashcroft & Mermin In 60 Days"
+    logo: images/Ashcroft_and_Mermin_CL_cover.png
+    tools:
+      - icon: github
+        href: https://github.com/xirtamesrevni/AshcroftMermin60Days
+        text: GitHub
+    align: center
+    alignment: center
+    collapse-level: 1
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: "Chapter 1"
+        contents:
+          - auto: notes/chapter1/*.qmd
+      - section: "Chapter 2"
+        contents:
+          - auto: notes/chapter2/*.qmd
+      - section: "X Spaces Discussions"
+        contents:
+          - auto: notes/x_discussions/*.qmd
+  page-navigation: true
+  open-graph: true
+  repo-url: https://github.com/XirtamEsrevni/AshcroftMermin60Days
+  repo-actions: [issue,edit]
+  site-url: https://XirtamEsrevni.github.io/AshcroftMermin60Days
+  twitter-card: true
+  comments: 
+    utterances:
+      repo: XirtamEsrevni/AshcroftMermin60Days
+
+
+
+format:
+  html:
+    theme:
+      light: pandoc
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-tools:
+      toggle: true
+    code-overflow: wrap
+    reference-location: margin
+    citations-hover: true
+    crossrefs-hover: true
+    grid:
+      body-width: 900px
+    resources: 
+      - audio/*
+      - transcripts/*

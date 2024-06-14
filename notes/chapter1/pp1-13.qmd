@@ -1,0 +1,83 @@
+---
+title: "Drude Theory (pp. 1-13)"
+author: 
+  - name: "Xirtam Esrevni"
+    email: "Xirtam.Esrevni@protonmail.com"
+    affiliation: 
+      - name: "Hilbert Space"
+  - name: "Book Club Cohort"
+    affiliation: "X Space"
+twitter-card:
+    creator: "@XirtamEsrevni"
+keywords:
+  - Independent Electron
+  - Drude Theory
+license: "CC BY"
+---
+
+## Basic Approximations
+
+The Drude theory is a basic model treating the conductive electrons under kinetic theory. The ion core, $eZ_a$ and core electrons, $e\left(Z_a-Z\right)$, are treated as stationary. Only interactions between conduction electrons and the core electrons and ion are considered. 
+
+Give such treatment, the electron density in number of electrons per $\text{cm}^3$ is written as:
+
+$$n = 6.022 \times 10^{23} \frac{Z_c\rho_m}{A}$$
+
+with $Z_c$ the number of conduction electrons contributed by an atom and $\rho_m$ and $A$ are the mass density and atomic mass, respectively.
+
+A effective electron radius can be defined by considering a conduction volume of a sphere, $r_s = (\frac{3}{4\pi n})^{1/3}$.
+
+The Drude model assumes only interactions between effective ion cores and independent electrons. We write a  collision frequency for electron-ion as $\frac{1}{\tau}$.
+
+## DC Electrical Conductivity
+
+The resistance, $R$, is a dimension dependent quantity and can be removed by considering the resistivity, $rho$, a takes meaning when defining the electric field at a point due to a current density.:
+
+$$\mathbf{E} = \rho \mathbf{j}$$
+
+In the Drude model $\mathbf{j}$ can be expressed in terms of charge density and average velocity, $\mathbf{v}$
+
+$$\mathbf{j} = -e\,n\mathbf{v}$$.
+
+The average velocity of an electron in the presence of a field can be approximated as $\mathbf{v} = \frac{e\mathbf{E}\tau}{m_e}$, $m_e$ being the mass of an electron.
+
+Putting it together in terms of currenty density $j$:
+
+$$\mathbf{j} = \sigma \mathbf{E} = \frac{ne^2 \tau}{m_e} \mathbf{E}$$
+
+with $\sigma$ being the conductivity. Measuring $\sigma$ (or $\rho$) enables determining $\tau$ which ranges from 1-10 femtoseconds. The mean free path then being $\lambda=v_o \tau$. 
+
+If assuming equipartion of energy for a free gas, then $v_o = \frac{3}{2}k_b T$ and $\lambda$ is between 1-10 Angstroms.
+
+The electron current density can be written in terms of momentum and the effect of an external field and collisions, $\frac{dt}{\tau}$, can be included. Without collisions, $(1-\frac{dt}{\tau})$, the momentum, $p(t+dt)$ is given as:
+
+$$ \mathbf{p}(t+dt)= \mathbf{p}(t) - \left(\frac{dt}{\tau}\right)\mathbf{p}(t) + \mathbf{f}(t) dt + \mathcal{O}(dt)^2 $$
+
+The collision term, $\frac{dt}{\tau}$, only affects terms of $\mathcal{O}(dt)^2$. Then, rearranging, dividing by $dt$, and taking limit as $dt \rightarrow 0$, gives:
+
+$$
+\frac{d\mathbf{p}(t)}{dt} = -\frac{\mathbf{p}(t)}{\tau} + \mathbf{f}(t)
+$$ {#eq-1-12}
+
+This states that individual collisions of electrons introduce a frictiaonal damping^[Max mentioned in our twitter dicussion that this looks very similar to fluctuation-dissipation theorems in thermodynamics.]
+
+## Hall Effect, Magnetoresistance
+
+The Drude theory can be used to solve the following setup:
+
+![Hall experiment](https://upload.wikimedia.org/wikipedia/commons/1/19/Hall_Effect_Measurement_Setup_for_Electrons.png)
+
+A magnetoresistance is experienced due to the force felt on the current,$j_x$, along a substrate. A *Hall coefficient* can be defined as $R_H = \frac{E_y}{j_x H}$. 
+
+If we find steady-state solutions for $j_x$ using the @eq-1-12, one gets:
+
+$$
+\begin{align}
+\sigma_o E_x  &= \omega_c \tau j_y + j_x \\
+\sigma_o E_y &= -\omega_c \tau j_x + j_y \\
+\end{align}
+$$,
+
+but there is no transverse current $j_y$ when the Hall field $E_y$ is present. Therefore, the hall resistance is given by:
+
+$$ R_H = -\frac{1}{nec} $$
