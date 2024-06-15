@@ -54,6 +54,72 @@
     ]
   },
   {
+    "objectID": "notes/chapter3/pp58-62.html",
+    "href": "notes/chapter3/pp58-62.html",
+    "title": "Failures of Free Electron Model (pp. 58-62)",
+    "section": "",
+    "text": "Free electron theories predict hall coefficient, \\(R_H\\), does not depend on magnetic field strength and temperature, which in general they do.\nMagnetoresistance should depend on magnetic field strength.\nFree electron model does not always predict correct sign.\nWiedmann-Franz law (i.e., \\(\\frac{\\kappa}{\\sigma} \\propto T\\)) works in low temperature regime.\nDC electrical conductivity using free electron model can’t capture temperature dependence or anisotropic \\(\\mathbf{j}\\).\nFree electron model oversimplifies dielectric constant frequency dependence.\nSpecific heat predictions from free-electron model perform well in narrow temperature regimes for specific materials.\nNo insight from free electron model on why it adds to specific heat.\nElectron-electron and ion-electron interactions are missing so equations of state are weak approximations.",
+    "crumbs": [
+      "Chapter 3",
+      "Failures of Free Electron Model (pp. 58-62)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter3/pp58-62.html#difficulties",
+    "href": "notes/chapter3/pp58-62.html#difficulties",
+    "title": "Failures of Free Electron Model (pp. 58-62)",
+    "section": "",
+    "text": "Free electron theories predict hall coefficient, \\(R_H\\), does not depend on magnetic field strength and temperature, which in general they do.\nMagnetoresistance should depend on magnetic field strength.\nFree electron model does not always predict correct sign.\nWiedmann-Franz law (i.e., \\(\\frac{\\kappa}{\\sigma} \\propto T\\)) works in low temperature regime.\nDC electrical conductivity using free electron model can’t capture temperature dependence or anisotropic \\(\\mathbf{j}\\).\nFree electron model oversimplifies dielectric constant frequency dependence.\nSpecific heat predictions from free-electron model perform well in narrow temperature regimes for specific materials.\nNo insight from free electron model on why it adds to specific heat.\nElectron-electron and ion-electron interactions are missing so equations of state are weak approximations.",
+    "crumbs": [
+      "Chapter 3",
+      "Failures of Free Electron Model (pp. 58-62)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter3/pp58-62.html#unexplained-in-free-electron-mode",
+    "href": "notes/chapter3/pp58-62.html#unexplained-in-free-electron-mode",
+    "title": "Failures of Free Electron Model (pp. 58-62)",
+    "section": "Unexplained in Free Electron Mode",
+    "text": "Unexplained in Free Electron Mode\n\nThe assumptions do not explain why certain ion-bound electrons become conduction elecrons.\nNothing is said for why some materials do not conduct at all.",
+    "crumbs": [
+      "Chapter 3",
+      "Failures of Free Electron Model (pp. 58-62)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter3/pp58-62.html#review-of-free-electron-approximations",
+    "href": "notes/chapter3/pp58-62.html#review-of-free-electron-approximations",
+    "title": "Failures of Free Electron Model (pp. 58-62)",
+    "section": "Review of Free Electron Approximations",
+    "text": "Review of Free Electron Approximations\nThe model assumes three important things:\n\nThe only role of ions is to act as classical point-like scattering centers (Free Electrons)\nThe electrons never see other electrons, i.e., no Coulomb force, and are independent1.\nThe time between collision events does not account for other electrons (independent relaxation-time).\n\n1 In the Sommerfeld model this means treating a single-particle Schrodinger equation.",
+    "crumbs": [
+      "Chapter 3",
+      "Failures of Free Electron Model (pp. 58-62)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter3/pp58-62.html#beyond-free-electron-theory",
+    "href": "notes/chapter3/pp58-62.html#beyond-free-electron-theory",
+    "title": "Failures of Free Electron Model (pp. 58-62)",
+    "section": "Beyond Free Electron Theory",
+    "text": "Beyond Free Electron Theory\nThe goal is to focus on droping or relaxing some of these approximations. The first is to include the effect of ions, mainly the existance of a static potential formed from ions in some fixed array in space2. This improves many aspects of the free electron models but only for the non-collisional case. When the motion of ions is taken into account (hint: phonons) the collisions can be better understood.\n\n\n\n\n2 The term solid-state physics in this book is used to always imply ordered arrangment of ions and therefore a crystal structure. However, more modern condensed matter physics would include other phases",
+    "crumbs": [
+      "Chapter 3",
+      "Failures of Free Electron Model (pp. 58-62)"
+    ]
+  },
+  {
+    "objectID": "notes/chapter4/pp64-77.html",
+    "href": "notes/chapter4/pp64-77.html",
+    "title": "Crystal Lattices (pp.64-77)",
+    "section": "",
+    "text": "ReuseCC BY 4.0",
+    "crumbs": [
+      "Chapter 4",
+      "Crystal Lattices (pp.64-77)"
+    ]
+  },
+  {
     "objectID": "notes/chapter2/pp30-43.html",
     "href": "notes/chapter2/pp30-43.html",
     "title": "Sommerfeld Theory (pp. 30-33)",

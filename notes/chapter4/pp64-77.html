@@ -8,9 +8,9 @@
 
 <meta name="author" content="Xirtam Esrevni">
 <meta name="author" content="Book Club Cohort">
-<meta name="keywords" content="Independent Electron, Drude Theory, AC Conductivity, Thermal conductivity">
+<meta name="keywords" content="Bravais Lattice, Primitive Unit Cell">
 
-<title>Drude Theory (pp.&nbsp;14-26)</title>
+<title>Crystal Lattices (pp.64-77)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,8 +67,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../notes/chapter2/pp30-43.html" rel="next">
-<link href="../../notes/chapter1/pp1-13.html" rel="prev">
+<link href="../../notes/x_discussions/13Jun2024.html" rel="next">
+<link href="../../notes/chapter3/pp58-62.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -108,45 +108,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Drude Theory (pp.&nbsp;14-26)">
-<meta property="og:description" content="">
+<meta property="og:title" content="Crystal Lattices (pp.64-77)">
 <meta property="og:image" content="https://XirtamEsrevni.github.io/AshcroftMermin60Days/images/Ashcroft_and_Mermin_CL_cover.png">
 <meta property="og:image:height" content="1751">
 <meta property="og:image:width" content="2000">
-<meta name="twitter:title" content="Drude Theory (pp.&nbsp;14-26)">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Crystal Lattices (pp.64-77)">
 <meta name="twitter:image" content="https://XirtamEsrevni.github.io/AshcroftMermin60Days/images/Ashcroft_and_Mermin_CL_cover.png">
+<meta name="twitter:creator" content="@XirtamEsrevni">
 <meta name="twitter:image-height" content="1751">
 <meta name="twitter:image-width" content="2000">
 <meta name="twitter:card" content="summary_large_image">
@@ -161,7 +131,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/chapter1/pp1-13.html">Chapter 1</a></li><li class="breadcrumb-item"><a href="../../notes/chapter1/pp14-26.html">Drude Theory (pp.&nbsp;14-26)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/chapter4/pp64-77.html">Chapter 4</a></li><li class="breadcrumb-item"><a href="../../notes/chapter4/pp64-77.html">Crystal Lattices (pp.64-77)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -201,13 +171,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Chapter 1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notes/chapter1/pp1-13.html" class="sidebar-item-text sidebar-link">
@@ -216,7 +186,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/chapter1/pp14-26.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../notes/chapter1/pp14-26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Drude Theory (pp.&nbsp;14-26)</span></a>
   </div>
 </li>
@@ -258,16 +228,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Chapter 4</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/chapter4/pp64-77.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notes/chapter4/pp64-77.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Crystal Lattices (pp.64-77)</span></a>
   </div>
 </li>
@@ -295,23 +265,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#ac-electrical-conductivity" id="toc-ac-electrical-conductivity" class="nav-link active" data-scroll-target="#ac-electrical-conductivity">AC Electrical Conductivity</a></li>
-  <li><a href="#thermal-conductivity-of-a-metal" id="toc-thermal-conductivity-of-a-metal" class="nav-link" data-scroll-target="#thermal-conductivity-of-a-metal">Thermal Conductivity of a Metal</a></li>
-  <li><a href="#thermopower" id="toc-thermopower" class="nav-link" data-scroll-target="#thermopower">Thermopower</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/XirtamEsrevni/AshcroftMermin60Days/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/XirtamEsrevni/AshcroftMermin60Days/edit/main/notes/chapter1/pp14-26.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/chapter1/pp1-13.html">Chapter 1</a></li><li class="breadcrumb-item"><a href="../../notes/chapter1/pp14-26.html">Drude Theory (pp.&nbsp;14-26)</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/chapter4/pp64-77.html">Chapter 4</a></li><li class="breadcrumb-item"><a href="../../notes/chapter4/pp64-77.html">Crystal Lattices (pp.64-77)</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Drude Theory (pp.&nbsp;14-26)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Crystal Lattices (pp.64-77)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -348,46 +310,17 @@ window.Quarto = {
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
-    <p>Independent Electron, Drude Theory, AC Conductivity, Thermal conductivity</p>
+    <p>Bravais Lattice, Primitive Unit Cell</p>
   </div>
 </div>
 
 </header>
 
 
-<section id="ac-electrical-conductivity" class="level2">
-<h2 class="anchored" data-anchor-id="ac-electrical-conductivity">AC Electrical Conductivity</h2>
-<p>When a time varying electric field is present, <span class="math inline">\(\mathbf{E}(t) = Re\left(\mathbf{E}(\omega)e^{-i\omega t}\right)\)</span>, the frequency dependent electrical conductivity is:</p>
-<p><span class="math display">\[ \sigma(\omega) = \frac{\sigma_o}{1-i\omega t}\]</span></p>
-<p>with <span class="math inline">\(\sigma_o\)</span> being the DC Drude conductivity. If we look to solutions for to Maxwell’s equations given a specified current density <span class="math inline">\(\mathbf{j}\)</span>, the resulting wave equation has dielectric constant of the form:</p>
-<p><span class="math display">\[\mathbf{\epsilon}(\omega) = 1 + \frac{4\pi i \sigma}{\omega}\]</span>.</p>
-<p>Assuming <span class="math inline">\(\omega \tau \gg 1\)</span> and thus <span class="math inline">\(1-i\omega\tau \approx -i\omega \tau\)</span>, then:</p>
-<p><span id="eq-1-37"><span class="math display">\[\mathbf{\epsilon}(\omega) = 1 - \frac{3\pi n e^2}{m \omega^2} = 1 - \frac{\omega_p^2}{\omega^2} \tag{1}\]</span></span></p>
-<p>where <span class="math inline">\(\omega_p^2\)</span> is called the plasma frequency and dictates wheter EM radiation can propagate through the electron gas. Another outcome from <a href="#eq-1-37" class="quarto-xref">Equation&nbsp;1</a>, is charge density oscillations that have oscillatory time depencence <span class="math inline">\(e^{-i\omega t}\)</span>.</p>
-</section>
-<section id="thermal-conductivity-of-a-metal" class="level2">
-<h2 class="anchored" data-anchor-id="thermal-conductivity-of-a-metal">Thermal Conductivity of a Metal</h2>
-<p>A one-dimensonal thermal current will be given by <span class="math inline">\(j^q = -\kappa \frac{dT}{dx}\)</span>. Simplifying this to view the thermal energy per electron before and after a collision, would be <span class="math inline">\(\mathcal{E}(T[x\prime])\)</span> and <span class="math inline">\(\mathcal{E}(T[x])\)</span>, respectively. Consider that two thermal resivoirs, a hot and cold, then we can write:</p>
-<p><span class="math display">\[ j^q = \frac{1}{2} n\, v\left( \mathcal{E}(T[x-v\tau]) - \mathcal{E}(T[x+v\tau])\right) \]</span></p>
-<p>the first term in parenthesis is the hot and the second the cold. The prefactor is the number of electrons and their velocity. Expanding about the point <span class="math inline">\(x\)</span> gives:</p>
-<p><span class="math display">\[j^q = nv^2\tau \frac{d\mathcal{E}}{dT}\left(-\frac{dT}{dx}\right)\]</span></p>
-<p>In 3D, assumping isotropic velocity distribution, <span class="math inline">\(\langle \mathbf{v} \rangle = \frac{1}{3}v^2\)</span>, and from thermodynamics <span class="math inline">\(n\frac{\mathcal{E}}{dT}=C_v\)</span>. Then the thermal current is given as:</p>
-<p><span class="math display">\[\mathbf{j}^q = -\frac{1}{3}v^2\tau C_v \nabla T\]</span></p>
-<p>and defining thermal conductivity as:</p>
-<p><span class="math display">\[ \frac{1}{3} v^2 \tau C_v \]</span></p>
-<p>One of the success of this analysis is the Wiedemann-Franz law, which assumes both the electronic specific heat, <span class="math inline">\(C_v\)</span>, and the electronic velocity <span class="math inline">\(v\)</span> are described through classical ideal gas laws and thus leads to:</p>
-<p><span class="math display">\[\frac{\kappa}{\sigma} = \frac{3}{2} \left(\frac{k_B}{e}\right)^2 T\,,\]</span></p>
-<p>Which surprisingly agreed with experiments, because the electronic contributions to specific heat is no where near <span class="math inline">\(\frac{3}{2} n k_B\)</span>. It turned out that the agreement was pure luck in canceling of two errors in the Drude theory approximation that cancel each other out.</p>
-</section>
-<section id="thermopower" class="level2">
-<h2 class="anchored" data-anchor-id="thermopower">Thermopower</h2>
-<p>Similar to thermal conductivity, using the Drude theory to analyze thermopower in thermoelectrics, it is found to be constant:</p>
-<p><span class="math display">\[ Q = -\frac{k_B}{2e} \]</span></p>
 
 
 <!-- -->
 
-</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1009,18 +942,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../notes/chapter1/pp1-13.html" class="pagination-link" aria-label="Drude Theory (pp. 1-13)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Drude Theory (pp.&nbsp;1-13)</span>
+      <a href="../../notes/chapter3/pp58-62.html" class="pagination-link" aria-label="Failures of Free Electron Model (pp. 58-62)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Failures of Free Electron Model (pp.&nbsp;58-62)</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../notes/chapter2/pp30-43.html" class="pagination-link" aria-label="Sommerfeld Theory (pp. 30-33)">
-        <span class="nav-page-text">Sommerfeld Theory (pp.&nbsp;30-33)</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../notes/x_discussions/13Jun2024.html" class="pagination-link" aria-label="Ch. 1-4">
+        <span class="nav-page-text">Ch. 1-4</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Drude Theory (pp. 14-26)"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Crystal Lattices (pp.64-77)"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> </span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: "Xirtam Esrevni"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    email: "Xirtam.Esrevni@protonmail.com"</span></span>
@@ -1028,64 +961,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">      - name: "Hilbert Space"</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: "Book Club Cohort"</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation: "X Space"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">keywords:</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - Independent Electron</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Drude Theory</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - AC Conductivity</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - Thermal conductivity</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">twitter-card:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    creator: "@XirtamEsrevni"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="an">keywords:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Bravais Lattice</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - Primitive Unit Cell</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="an">license:</span><span class="co"> "CC BY"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## AC Electrical Conductivity</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>When a time varying electric field is present, $\mathbf{E}(t) = Re\left(\mathbf{E}(\omega)e^{-i\omega t}\right)$, the frequency dependent electrical conductivity is:</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>$$ \sigma(\omega) = \frac{\sigma_o}{1-i\omega t}$$</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>with $\sigma_o$ being the DC Drude conductivity. If we look to solutions for to Maxwell's equations given a specified current density $\mathbf{j}$, the resulting wave equation has dielectric constant of the form:</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>$$\mathbf{\epsilon}(\omega) = 1 + \frac{4\pi i \sigma}{\omega}$$.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Assuming $\omega \tau \gg 1$ and thus $1-i\omega\tau \approx -i\omega \tau$, then:</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>$$\mathbf{\epsilon}(\omega) = 1 - \frac{3\pi n e^2}{m \omega^2} = 1 - \frac{\omega_p^2}{\omega^2}$$ {#eq-1-37}</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>where $\omega_p^2$ is called the plasma frequency and dictates wheter EM radiation can propagate through the electron gas. Another outcome from @eq-1-37, is charge density oscillations that have oscillatory time depencence $e^{-i\omega t}$.</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Thermal Conductivity of a Metal</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>A one-dimensonal thermal current will be given by $j^q = -\kappa \frac{dT}{dx}$. Simplifying this to view the thermal energy per electron before and after a collision, would be $\mathcal{E}(T<span class="co">[</span><span class="ot">x\prime</span><span class="co">]</span>)$ and $\mathcal{E}(T<span class="co">[</span><span class="ot">x</span><span class="co">]</span>)$, respectively. Consider that two thermal resivoirs, a hot and cold, then we can write:</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>$$ j^q = \frac{1}{2} n\, v\left( \mathcal{E}(T<span class="co">[</span><span class="ot">x-v\tau</span><span class="co">]</span>) - \mathcal{E}(T<span class="co">[</span><span class="ot">x+v\tau</span><span class="co">]</span>)\right) $$</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>the first term in parenthesis is the hot and the second the cold. The prefactor is the number of electrons and their velocity. Expanding about the point $x$ gives:</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>$$j^q = nv^2\tau \frac{d\mathcal{E}}{dT}\left(-\frac{dT}{dx}\right)$$</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>In 3D, assumping isotropic velocity distribution, $\langle \mathbf{v} \rangle = \frac{1}{3}v^2$, and from thermodynamics $n\frac{\mathcal{E}}{dT}=C_v$. Then the thermal current is given as:</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>$$\mathbf{j}^q = -\frac{1}{3}v^2\tau C_v \nabla T$$</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>and defining thermal conductivity as:</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>$$ \frac{1}{3} v^2 \tau C_v $$</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>One of the success of this analysis is the Wiedemann-Franz law, which assumes both the electronic specific heat, $C_v$, and the electronic velocity $v$ are described through classical ideal gas laws and thus leads to:</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>$$\frac{\kappa}{\sigma} = \frac{3}{2} \left(\frac{k_B}{e}\right)^2 T\,,$$</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Which surprisingly agreed with experiments, because the electronic contributions to specific heat is no where near $\frac{3}{2} n k_B$. It turned out that the agreement was pure luck in canceling of two errors in the Drude theory approximation that cancel each other out. </span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="fu">## Thermopower</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Similar to thermal conductivity, using the Drude theory to analyze thermopower in thermoelectrics, it is found to be constant:</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>$$ Q = -\frac{k_B}{2e} $$</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/XirtamEsrevni/AshcroftMermin60Days/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/XirtamEsrevni/AshcroftMermin60Days/edit/main/notes/chapter1/pp14-26.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/XirtamEsrevni/AshcroftMermin60Days/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/XirtamEsrevni/AshcroftMermin60Days/edit/main/notes/chapter4/pp64-77.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
