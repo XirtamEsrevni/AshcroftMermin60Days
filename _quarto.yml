@@ -27,6 +27,12 @@ website:
       - section: "Chapter 2"
         contents:
           - auto: notes/chapter2/*.qmd
+      - section: "Chapter 3"
+        contents:
+          - auto: notes/chapter3/*.qmd
+      - section: "Chapter 4"
+        contents:
+          - auto: notes/chapter4/*.qmd
       - section: "X Spaces Discussions"
         contents:
           - auto: notes/x_discussions/*.qmd

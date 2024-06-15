@@ -1,0 +1,45 @@
+---
+title: "Failures of Free Electron Model (pp. 58-62)"
+author: 
+  - name: "Xirtam Esrevni"
+    email: "Xirtam.Esrevni@protonmail.com"
+    affiliation: 
+      - name: "Hilbert Space"
+  - name: "Book Club Cohort"
+    affiliation: "X Space"
+twitter-card:
+    creator: "@XirtamEsrevni"
+keywords:
+  - Independent Electron
+  - Free Electron 
+license: "CC BY"
+---
+
+## Difficulties
+
+1. Free electron theories predict hall coefficient, $R_H$, does not depend on magnetic field strength and temperature, which in general they do.
+2. Magnetoresistance should depend on magnetic field strength.
+3. Free electron model does not always predict correct sign.
+4. Wiedmann-Franz law (i.e., $\frac{\kappa}{\sigma} \propto T$) works in low temperature regime.
+5. DC electrical conductivity using free electron model can't capture temperature dependence or anisotropic $\mathbf{j}$.
+6. Free electron model oversimplifies dielectric constant frequency dependence.
+7. Specific heat predictions from free-electron model perform well in narrow temperature regimes for specific materials.
+8. No insight from free electron model on why it adds to specific heat.
+9. Electron-electron and ion-electron interactions are missing so equations of state are weak approximations.
+    
+## Unexplained in Free Electron Mode
+
+1. The assumptions do not explain why certain ion-bound electrons become conduction elecrons.
+2. Nothing is said for why some materials do not conduct at all.
+
+## Review of Free Electron Approximations
+
+The model assumes three important things:
+
+1. The only role of ions is to act as classical point-like scattering centers (**Free Electrons**)
+2. The electrons never see other electrons, i.e., no Coulomb force, and are **independent**^[In the Sommerfeld model this means treating a single-particle Schrodinger equation.].
+3. The time between collision events does not account for other electrons (**independent relaxation-time**).
+
+## Beyond Free Electron Theory
+
+The goal is to focus on droping or relaxing some of these approximations. The first is to include the effect of ions, mainly the existance of a static potential formed from ions in some fixed array in space^[The term solid-state physics in this book is used to always imply ordered arrangment of ions and therefore a crystal structure. However, more modern condensed matter physics would include other phases]. This improves many aspects of the free electron models but only for the non-collisional case. When the motion of ions is taken into account (*hint*: phonons) the collisions can be better understood. 
