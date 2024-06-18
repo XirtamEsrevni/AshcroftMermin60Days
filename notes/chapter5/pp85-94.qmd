@@ -1,0 +1,36 @@
+---
+title: "Reciprocal Lattice (pp85-94)"
+author: 
+  - name: "Xirtam Esrevni"
+    email: "Xirtam.Esrevni@protonmail.com"
+    affiliation: 
+      - name: "Hilbert Space"
+  - name: "Book Club Cohort"
+    affiliation: "X Space"
+twitter-card:
+    creator: "@XirtamEsrevni"
+keywords:
+  - Reciprocal Lattice
+  - Bravais Lattice
+  - Primitive Unit Cell
+license: "CC BY"
+---
+
+
+## The Reciprocal Lattice
+
+Given crystal structures as discussed in [ch. 4: crystal lattices](../chapter4/pp78-83.qmd) the natural question to ask is what waves are commensurate with the structure. 
+
+The most natural waves to consider are planewaves, with wave vectors $\mathbf{k}$, and defined as $e^{i\mathbf{k}\cdot\mathbf{r}}$. If one considers a Bravais lattice and considers the  set of wave vectors $\mathbf{K}$ that yield the same peridocity; this results in the *reciprocal lattice*.
+
+The reciprocal lattices satifies:
+
+$$ e^{i\mathbf{K}\cdot\left(\mathbf{r}+\mathbf{R}\right)} = e^{i\mathbf{K}\cdot \mathbf{r}}$$
+
+and means $e^{i\mathbf{K}\cdot \mathbf{R}}=1$. When considering the primitive direct and reciprocal lattices, the reciprical lattice vectors can be written in terms of $\mathbf{b}_1$, $\mathbf{b}_2$, and $\mathbf{b}_3$ and satisfy:
+
+$$\mathbf{b}_i\\cdot mathbf{a}_j = 2\pi\delta_{ij}$$
+
+with $\mathbf{b}_i$ being the primitive lattice vectors and $\mathbf{a}_j$ the primitive Bravais lattice vectors. The reciprocal lattice in terms of $\mathbf{b}_i$ is just the primitive Brain lattice for reciprocal space.
+
+## Brillouin Zone and Planes

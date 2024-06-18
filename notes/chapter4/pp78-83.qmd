@@ -1,0 +1,18 @@
+---
+title: "Crystal Lattices (pp.77-83)"
+author: 
+  - name: "Xirtam Esrevni"
+    email: "Xirtam.Esrevni@protonmail.com"
+    affiliation: 
+      - name: "Hilbert Space"
+  - name: "Book Club Cohort"
+    affiliation: "X Space"
+twitter-card:
+    creator: "@XirtamEsrevni"
+keywords:
+  - Bravais Lattice
+  - Primitive Unit Cell
+license: "CC BY"
+---
+
+## Crystal Lattices {#sec-ch4-crystals}

@@ -21,6 +21,9 @@ website:
     contents:
       - href: index.qmd
         text: Home
+      - section: "X Spaces Discussions"
+        contents:
+          - auto: notes/x_discussions/*.qmd
       - section: "Chapter 1"
         contents:
           - auto: notes/chapter1/*.qmd
@@ -33,9 +36,9 @@ website:
       - section: "Chapter 4"
         contents:
           - auto: notes/chapter4/*.qmd
-      - section: "X Spaces Discussions"
+      - section: "Chapter 5"
         contents:
-          - auto: notes/x_discussions/*.qmd
+          - auto: notes/chapter5/*.qmd
   page-navigation: true
   open-graph: true
   repo-url: https://github.com/XirtamEsrevni/AshcroftMermin60Days
@@ -55,6 +58,7 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+#    number-sections: true
     code-copy: true
     code-tools:
       toggle: true
